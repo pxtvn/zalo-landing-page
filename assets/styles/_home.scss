@@ -13,7 +13,23 @@
   @media screen and (min-width: 400px) {
     .section-main {
       &__box {
+        height: 550px;
         background-size: contain;
+      }
+    }
+  }
+  @media screen and (min-width: 470px) {
+    .section-main {
+      &__box {
+        height: 640px;
+        background-size: contain;
+      }
+    }
+  }
+  @media screen and (max-width: 361px) {
+    .section-main {
+      &__box {
+        height: 500px;
       }
     }
   }
