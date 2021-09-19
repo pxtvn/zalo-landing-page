@@ -322,6 +322,10 @@
   padding-bottom: 83px;
 }
 
+.section-main__box.not-breadcumbs .section-main__menu {
+  padding: 0;
+}
+
 .section-main .breadcumbs {
   font-size: 10px;
   font-weight: 400;

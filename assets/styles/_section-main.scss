@@ -21,8 +21,11 @@
 
     &.not-breadcumbs {
       text-align: center;
-    background-size: cover;
-    padding-bottom: 83px;
+      background-size: cover;
+      padding-bottom: 83px;
+      .section-main__menu {
+        padding: 0;
+      }
     }
   }
   .breadcumbs {
@@ -43,8 +46,8 @@
   }
 
   &__menu {
-      padding-left: 35px;
-      padding-right: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
     .button-menu {
       width: 100%;
       background: #303d4f;
@@ -84,15 +87,15 @@
       align-items: center;
     }
   }
-  
+
   @media screen and (min-width: 360px) {
     &__menu {
-        margin: 0 23px 0 23px;
+      margin: 0 23px 0 23px;
     }
   }
-  
+
   @media screen and (min-width: 400px) {
-      height: 714px;
+    height: 714px;
   }
 }
 
