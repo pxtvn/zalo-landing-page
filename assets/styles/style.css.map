@@ -5,7 +5,8 @@
         "style.scss",
         "_menu.scss",
         "_accordion.scss",
-        "_section-main.scss"
+        "_section-main.scss",
+        "_section-list.scss"
     ],
     "names": [],
     "file": "style.css"
