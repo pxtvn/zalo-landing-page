@@ -13,6 +13,18 @@
     border-bottom-right-radius: 40px;
     font-style: bold;
     box-shadow: 0px 2px #821d1d;
+    &.title-custom {
+      font-size: 18px;
+      line-height: 22px;
+      width: 80%;
+      background-color: unset;
+      color: #12416B;
+      border-radius: unset;
+      box-shadow: unset;
+      border-left: 6px solid #12416B;
+      margin-left: 35px;
+      padding-left: 14px;
+    }
     &-extra {
       font-size: 15px;
       padding-left: 35px;
@@ -31,6 +43,7 @@
     padding-right: 35px;
     .section__item {
       display: flex;
+      align-items: center;
       &:not(:last-child) {
         margin-bottom: 22px;
       }
@@ -39,6 +52,8 @@
         max-height: 80px;
         img {
           border-radius: 10px;
+          width: 100%;
+          height: 100%;
         }
         &.no-radius {
           img {
@@ -47,26 +62,71 @@
         }
         & + .section__info {
           padding-left: 17px;
+          padding-right: 4px;
         }
       }
       .section__info {
+        width: 65%;
         .title {
           img {
             max-height: 18px;
             min-width: 20px;
-            margin-bottom: 5px;
           }
           h4 {
             font-weight: 700;
             font-size: 13px;
             line-height: 15px;
             color: #12416B;
-            margin-bottom: 7px;
+            margin-bottom: 10px;
+            margin-top: 7px;
           }
         }
+      }
 
-        &.gray-bg {
+      &.long-img {
+        .section__box {
+          min-width: 106px;
+          max-height: 56px;
+        }
+        .section__info {
           background-color: #EBEBEB;
+          width: 100%;
+          padding-left: 12px;
+          padding-right: 28px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 56px;
+          .title {
+            h4 {
+              font-weight: 700;
+              font-size: 13px;
+              line-height: 13px;
+              color: #000000;
+              margin-bottom: 4px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+
+      &.has-desc {
+        .section__box {
+          max-width: 96px;
+          max-height: 96px;
+        }
+        .section__info {
+          h4 {
+            font-size: 12px;
+            margin-bottom: 4px;
+          }
+          .content {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 12px;
+            color: #000000;
+            margin-bottom: 6px;
+          }
         }
       }
     }
@@ -92,8 +152,15 @@
     background-color: #fff;
   }
   &.no-bg {
+    background-color: unset;
     flex-direction: row-reverse;
+    padding-left: 0;
+    img {
+       width: 18px;
+    }
     span {
+      font-size: 10px;
+      font-style: italic;
       margin-left: 10px;
       margin-right: 0px;
     }
