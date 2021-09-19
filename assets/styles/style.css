@@ -385,6 +385,67 @@
           align-items: center;
 }
 
+.section-why {
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.section-why .section__title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: #12416b;
+}
+
+.section-why p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  padding-bottom: 10px;
+  color: #575757;
+}
+
+.section-why .benefit .item {
+  padding: 12px;
+  background: #fafdff;
+  border: 1px solid #73cbdd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 16px 30px 30px -19px rgba(0, 0, 0, 0.1);
+          box-shadow: 16px 30px 30px -19px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-why .benefit .item:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.section-why .benefit .item .title {
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.section-why .benefit .item .box {
+  max-width: 42px;
+  max-height: 35px;
+}
+
+.section-why .benefit .item .box img {
+  width: 42px;
+}
+
+.section-why .benefit .item .box + .info {
+  padding-left: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
