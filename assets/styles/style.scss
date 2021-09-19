@@ -29,9 +29,11 @@
   font-weight: bold;
   font-style: italic;
 }
+
 @import './menu';
 @import './accordion';
 @import './section-main';
+@import './section-list';
 
 * {
   margin: 0;
