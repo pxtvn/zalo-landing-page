@@ -15,7 +15,6 @@ menuBtn.addEventListener("click", () => {
 
 // collapse
 const accordion = document.querySelectorAll(".button-collapse");
-console.log(accordion);
 accordion.forEach((accor) => {
   accor.addEventListener("click", () => {
     accor.classList.toggle("active");
@@ -23,29 +22,62 @@ accordion.forEach((accor) => {
 });
 
 // line  string
-  window.addEventListener("load", (event) => {
-    var el = document.querySelectorAll(".highlights");
+// window.addEventListener("load", (event) => {
+//   var el = document.querySelectorAll(".highlights");
 
-    var index = 0,
-      length = el.length;
-    for (; index < length; index++) {
-var divHeight = el.offsetHeight
-   var lineHeight = parseInt(el[index].style.lineHeight);
-   var lines = divHeight / lineHeight;
-   console.log("Lines: " +  divHeight);
-      if (lines >= 2) {
-        el[index].style.display = 'block'
-      }
-    }
-  });
-// window.addEventListener("load", () => {
-//   var divHeight = el.length;
-
-//   console.log(divHeight);
-
-//   var lines = divHeight;
-//   console.log("Lines: " + lines);
-//   if (lines = 2) {
-
+//   var index = 0,
+//     length = el.length;
+//   for (; index < length; index++) {
+//     var divHeight = el.offsetHeight;
+//     var lineHeight = parseInt(el[index].style.lineHeight);
+//     var lines = divHeight / lineHeight;
+//     console.log("Lines: " + divHeight);
+//     if (lines >= 2) {
+//       el[index].style.display = "block";
+//     }
 //   }
 // });
+// get scroll position in px
+function onclickss1(){
+  window.scroll(0,findPos(document.getElementById("ss1")));
+}
+function onclickss2(){
+  window.scroll(0,findPos(document.getElementById("ss2")));
+}
+// Finds y value of given object
+function findPos(obj) {
+  var curtop = 0;
+  if (obj.offsetParent) {
+    do {
+      document.getElementsByClassName('sticky-menu')[0].style.top = '60px'
+    curtop += obj.offsetTop - 83;
+      } while (obj = obj.offsetParent);
+  return [curtop];
+  }
+}
+let newValue = 0;
+window.addEventListener("scroll", (e) => {
+  var getHeightY = document.getElementById("ss1");
+  var getHeightY2 = document.getElementById("ss2");
+
+  var sticky = getHeightY.offsetTop;
+  var sticky2 = getHeightY2.offsetTop;
+  var a = document.getElementsByClassName("sticky-menu")[0];
+
+ var text = document.getElementById("p1").textContent
+  // document.getElementById("p2").textContent
+
+  newValue = window.scrollY;
+  console.log(text)
+  if (sticky < newValue + 170) {
+    a.classList.add('show');
+    setTimeout(function(){ a.style.display = 'block' }, 200);
+    document.getElementById("change-text").innerHTML = text;
+    console.log("Up");
+  } else {
+    a.classList.remove('show');
+    a.style.display = 'none'
+    console.log("Down");
+  }
+  console.log(sticky, newValue);
+});

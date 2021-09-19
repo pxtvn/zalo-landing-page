@@ -12,6 +12,14 @@
 
 <body>
   <div class="wrapper-home">
+    <div class="sticky-menu">
+      <div class="sticky">
+        <button class="button" type="button"><i class="fa fa-chevron-right"></i></button>
+        <div class="text">
+          <a id="change-text"></a>
+        </div>
+      </div>
+    </div>
     <div class="menu-wrap">
       <div class="menu">
         <div class="menu-left">
@@ -96,16 +104,16 @@
 
         <div class="section-main__menu">
           <button class="button button-menu" type="button">
-            <a href="#second">
+            <a onclick=onclickss1()>
               <img src="../assets/image/icon/icon-tmdtxbg.svg" alt="icon TMĐT Xuyên Biên Giới">
-              <div class="text">TMĐT Xuyên Biên Giới và
+              <div class="text" id="p1">TMĐT Xuyên Biên Giới và
                 Bán Hàng Trên Amazon </div>
             </a>
           </button>
           <button class="button button-menu" type="button">
-            <a href="#second">
+            <a  onclick=onclickss2()>
               <img src="../assets/image/icon/icon-sell.svg" alt="icon bán hàng">
-              <div class="text">Bắt đầu bán hàng</div>
+              <div class="text" id="p1">Bắt đầu bán hàng</div>
             </a>
           </button>
           <button class="button button-menu" type="button">
@@ -124,7 +132,7 @@
       </div>
     </section>
 
-    <section class="section-why">
+    <section class="section section-why" id="ss1">
       <h3 class="section__title">
         Tại sao bạn nên bán hàng
         trên Amazon?
@@ -165,7 +173,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section section-list-box" id="ss2">
       <h3 class="section__title-extra">TMĐT Xuyên Biên Giới và </h3>
       <h3 class="section__title">BÁN HÀNG TRÊN AMAZON</h3>
       <div class="section__list">
@@ -211,7 +219,7 @@
       </div>
     </section>
 
-    <section class="section-list-box section-list-group">
+    <section class="section section-list-box section-list-group">
       <h3 class="section__title">Bắt đầu bán hàng</h3>
       <div class="section__list group">
         <div class="section__item gray-color">

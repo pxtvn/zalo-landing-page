@@ -95,7 +95,11 @@
   }
 
   @media screen and (min-width: 400px) {
-    height: 714px;
+    &__box {
+      &.not-breadcumbs {
+        height: 714px;
+      }
+    }
   }
 }
 
