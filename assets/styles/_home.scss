@@ -3,6 +3,19 @@
   .section-list-group {
     background: #cee3f4;
   }
+  .section-list-box {
+      margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    border: unset;
+    &:not(.section-news):not(.section-list-group) {
+        padding-bottom: 0;
+    }
+    .section__list {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+  }
 }
 .wrapper-tmdtxbg {
   .section-main {
@@ -108,6 +121,14 @@
         color: #12416b;
         padding-bottom: 0;
       }
+    }
+  }
+  .section__list {
+    padding-bottom: 50px;
+  }
+  &:not(:last-child) {
+    .section__list {
+      border-bottom: 1px solid #12416b;
     }
   }
 }
