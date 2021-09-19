@@ -21,8 +21,8 @@
 
     &.not-breadcumbs {
       text-align: center;
-      background-size: cover;
-      padding-bottom: 83px;
+    background-size: cover;
+    padding-bottom: 83px;
     }
   }
   .breadcumbs {
@@ -38,12 +38,13 @@
     }
     & + .section__title {
       padding-top: 0;
-      padding-bottom: 280px;
+      padding-bottom: 100%;
     }
   }
 
   &__menu {
-    margin: 0 23px 0 23px;
+      padding-left: 35px;
+      padding-right: 35px;
     .button-menu {
       width: 100%;
       background: #303d4f;
@@ -82,6 +83,16 @@
       display: flex;
       align-items: center;
     }
+  }
+  
+  @media screen and (min-width: 360px) {
+    &__menu {
+        margin: 0 23px 0 23px;
+    }
+  }
+  
+  @media screen and (min-width: 400px) {
+      height: 714px;
   }
 }
 
@@ -145,7 +156,6 @@
 }
 
 .section-list-group {
-  background: #cee3f4;
   padding: 59px 0 59px 0;
   .section__list {
     &.group {
@@ -160,19 +170,19 @@
         width: calc(50% - 1rem);
         margin: 8px;
         &:not(:last-child) {
-            margin-bottom: 8px;
+          margin-bottom: 8px;
         }
         .section__box {
           max-width: 32px;
           display: flex;
           justify-content: center;
           align-items: center;
-            & + .section__info {
+          & + .section__info {
             padding-left: 0;
-            }
-            img {
-                border-radius: 0;
-            }
+          }
+          img {
+            border-radius: 0;
+          }
         }
         .section__info {
           display: flex;
@@ -208,6 +218,134 @@
           }
         }
       }
+    }
+  }
+}
+
+.section-news {
+  padding: 65px 0 65px 0;
+  .card {
+    padding-left: 35px;
+    padding-right: 35px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 16px;
+      padding-bottom: 14px;
+      color: #000000;
+    }
+    &__image {
+      z-index: 1;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__section {
+      background-color: #aed1ec;
+      & > *:not(:first-child) {
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 12px;
+      padding-top: 12px;
+      line-height: 15px;
+      padding-bottom: 4px;
+      color: #12416b;
+    }
+    &__desc {
+      font-size: 10px;
+      line-height: 12px;
+      padding-bottom: 5px;
+      font-weight: lighter;
+      color: #000000;
+    }
+
+    .see-more {
+      margin-top: 17px;
+    }
+
+    &.column {
+      .card__section {
+        position: relative;
+        background-color: unset;
+        .card__info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          &::before {
+            content: "";
+            --color-start: rgba(196, 196, 196, 0);
+            --color-end: #000000;
+            background-image: linear-gradient(
+              180deg,
+              var(--color-start) 0,
+              var(--color-end) 100%
+            );
+            height: 70%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
+        }
+      }
+      .card__image {
+        img {
+          border-radius: 15px;
+        }
+      }
+      .card__title,
+      .card__desc,
+      .full-time {
+        position: relative;
+        color: #fff;
+      }
+      .card__title {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 7px;
+      }
+      .full-time .time::before {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.full-time {
+  font-size: 7px;
+  padding-bottom: 14px;
+  line-height: 9px;
+  color: #707070;
+  span {
+    &:nth-child(2) {
+      &::after {
+        content: ",";
+      }
+    }
+  }
+  .time {
+    padding-left: 23px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      width: 3.25px;
+      height: 3px;
+      top: 35%;
+      transform: translate(-50%, 0);
+      border-radius: 100%;
+      background-color: #707070;
     }
   }
 }

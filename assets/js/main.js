@@ -1,55 +1,51 @@
-const menuBtn = document.querySelector('.menu-btn');
-const content = document.querySelector('.menu-content');
+const menuBtn = document.querySelector(".menu-btn");
+const content = document.querySelector(".menu-content");
 let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    content.classList.add('show');
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    content.classList.add("show");
     menuOpen = true;
   } else {
-    menuBtn.classList.remove('open');
-    content.classList.remove('show');
+    menuBtn.classList.remove("open");
+    content.classList.remove("show");
     menuOpen = false;
   }
 });
 
 // collapse
-const accordion = document.querySelectorAll('.button-collapse');
-console.log(accordion)
+const accordion = document.querySelectorAll(".button-collapse");
+console.log(accordion);
 accordion.forEach((accor) => {
-  accor.addEventListener('click', () => {
-    accor.classList.toggle('active')
-    // var h = document.getElementsByClassName("accordion__wrap")[0];
+  accor.addEventListener("click", () => {
+    accor.classList.toggle("active");
+  });
+});
 
-    // if (accor.classList.contains('active')) {
-    //   h.style.height = h.scrollHeight + 'px';
-    // } else {
-    //   h.style.height = 0;
-    // }
-  })
-})
+// line  string
+  window.addEventListener("load", (event) => {
+    var el = document.querySelectorAll(".highlights");
 
+    var index = 0,
+      length = el.length;
+    for (; index < length; index++) {
+var divHeight = el.offsetHeight
+   var lineHeight = parseInt(el[index].style.lineHeight);
+   var lines = divHeight / lineHeight;
+   console.log("Lines: " +  divHeight);
+      if (lines >= 2) {
+        el[index].style.display = 'block'
+      }
+    }
+  });
+// window.addEventListener("load", () => {
+//   var divHeight = el.length;
 
-// click to sroll 
-window.smoothScroll = function(target) {
-  var scrollContainer = target;
-  do { //find scroll container
-      scrollContainer = scrollContainer.parentNode;
-      if (!scrollContainer) return;
-      scrollContainer.scrollTop += 1;
-  } while (scrollContainer.scrollTop == 0);
+//   console.log(divHeight);
 
-  var targetY = 0;
-  do { //find the top of target relatively to the container
-      if (target == scrollContainer) break;
-      targetY += target.offsetTop;
-  } while (target = target.offsetParent);
+//   var lines = divHeight;
+//   console.log("Lines: " + lines);
+//   if (lines = 2) {
 
-  scroll = function(c, a, b, i) {
-      i++; if (i > 30) return;
-      c.scrollTop = a + (b - a) / 30 * i;
-      setTimeout(function(){ scroll(c, a, b, i); }, 20);
-  }
-  // start scrolling
-  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 60);
-}
+//   }
+// });
