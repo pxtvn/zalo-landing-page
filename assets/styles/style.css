@@ -1101,6 +1101,11 @@
   }
 }
 
+.wrapper-news .card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .wrapper-news .section-main__box {
   background: url("");
 }
@@ -1116,10 +1121,6 @@
 
 .wrapper-news .section__list {
   padding-bottom: 50px;
-}
-
-.wrapper-news:not(:last-child) .section__list {
-  border-bottom: 1px solid #12416b;
 }
 
 .truncated {
