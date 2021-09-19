@@ -1,0 +1,113 @@
+.menu {
+  background-color: #12416b;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 22px 18px 22px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+  &-right {
+    .button {
+      border-radius: 91px;
+      height: 24px;
+      padding: 6px 29px 6px 29px;
+      background: #f7941d;
+      border: none;
+      .text {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+
+        color: #12416b;
+      }
+
+      &.medium {
+        border-radius: 43px;
+      }
+    }
+  }
+  .logo {
+    max-width: 140px;
+    max-height: 22px;
+    margin-top: 2px;
+  }
+  &-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.45s ease-in-out;
+    &__burger {
+      width: 26px;
+      height: 3px;
+      background-color: #c4c4c4;
+      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+      transition: transform 0.45s ease-in-out;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 26px;
+        height: 3px;
+        background-color: #c4c4c4;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: transform 0.45s ease-in-out;
+      }
+
+      &::before {
+        transform: translateY(-8px);
+      }
+      &::after {
+        transform: translateY(8px);
+      }
+    }
+
+    /* ANIMATION */
+    &.open {
+      .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+    }
+    &.open {
+      .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+    }
+    &.open {
+      .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    }
+  }
+
+  &-content {
+    height: 100vh;
+    clip-path: circle(10px at 90% -10%);
+    transition: all 0.45s ease-out;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 35px 20px 35px;
+    z-index: 99999;
+
+    &.show {
+      clip-path: circle(1000px at 90% -10%);
+    }
+  }
+
+  &-wrap {
+    padding-top: 60px;
+  }
+}

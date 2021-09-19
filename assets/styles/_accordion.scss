@@ -1,0 +1,79 @@
+.accordion {
+  &__item {
+    border-bottom: 1px solid #cccccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    &:not(:first-child) {
+      border-top: 1px solid #cccccc;
+    }
+  }
+
+  
+  .button-collapse {
+    width: 20px;
+    height: max-content;
+    background-color: unset;
+    position: absolute;
+    right: -4px;
+    z-index: 1;
+    i {
+      color: #f7941d;
+      font-size: 11px;
+      transition: transform 0.3s linear;
+    }
+
+    &.active {
+      color: #f7941d;
+      i {
+        transform: rotate(180deg);
+      }
+      & + .accordion__body, & ~ .accordion__body {
+        &.collapse {
+          transition: max-height .45s ease-in;
+          max-height: 1000px;
+        }
+      }
+      & + .accordion__header, & ~ .accordion__header {
+        color: #f7941d;
+      }
+    }
+  }
+
+  &__header {
+    width: 100%;
+    color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 11px;
+    padding-right: 16px;
+  }
+  &__body {
+    width: 100%;
+    max-height: 0;
+    font-size: 11px;
+    overflow: hidden;
+    &.collapse {
+      transition: all .45s ease;
+    }
+
+    p {
+      color: inherit;
+      line-height: 20px;
+      &.title {
+        color: #12416b;
+        font-weight: 700;
+        padding-top: 12px;
+      }
+    }
+
+    .accordion__wrap {
+      height: 0;
+      transition: all 0.45s ease;
+      padding-left: 35px;
+    }
+  }
+}
