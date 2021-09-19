@@ -25,6 +25,20 @@
 
 @font-face {
   font-family: "MONTSERRAT";
+  src: url("../font/MONTSERRAT-EXTRABOLD.TTF") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "MONTSERRAT";
+  src: url("../font/MONTSERRAT-REGULAR.TTF") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MONTSERRAT";
   src: url("../font/MONTSERRAT-BOLDITALIC.TTF") format("truetype");
   font-weight: bold;
   font-style: italic;

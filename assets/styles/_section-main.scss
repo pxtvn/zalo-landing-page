@@ -114,7 +114,7 @@
       border-radius: 17px;
       display: flex;
       &:not(:last-child) {
-          margin-bottom: 22px;
+        margin-bottom: 22px;
       }
 
       .title {
@@ -133,6 +133,96 @@
         }
         & + .info {
           padding-left: 16px;
+        }
+      }
+      p.text {
+        font-weight: lighter;
+        font-size: 11px;
+        color: #000;
+      }
+    }
+  }
+}
+
+.section-list-box {
+  .section__title {
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 12px 0 12px 35px;
+    margin-bottom: 28px;
+    background-color: #f7941d;
+    width: 95%;
+    color: #ffffff;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-style: bold;
+    box-shadow: 0px 2px #821d1d;
+    &-extra {
+      font-size: 15px;
+      padding-left: 35px;
+      padding-right: 35px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #12416b;
+
+      & + .section__title {
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+.section-list-group {
+  background: #cee3f4;
+  padding: 59px 0 59px 0;
+  .section__list {
+    &.group {
+      display: flex;
+      flex-flow: row wrap;
+      .section__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 145px;
+        width: calc(50% - 1rem);
+        margin: 8px;
+        .section__box {
+          max-width: 32px;
+        }
+        .section__info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          .title {
+            padding: 7px 0 7px 0;
+            font-size: 13px;
+            color: #fff;
+            font-weight: bold;
+            max-width: 93px;
+            text-align: center;
+          }
+        }
+
+        &.gray-color {
+          background-color: #e4e4e4;
+          .title {
+            color: #000;
+          }
+        }
+        &.primary-color {
+          background-color: #f5911e;
+        }
+        &.navy-color {
+          background: #12416b;
+        }
+        &.light-blue {
+          background: #aed1ec;
+          .title {
+            color: #12416b;
+          }
         }
       }
     }
