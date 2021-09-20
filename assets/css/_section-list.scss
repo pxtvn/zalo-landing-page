@@ -213,7 +213,7 @@
       margin-right: 0px;
     }
   }
-  &:active {
+  &:active, &:hover {
     span, img {
       transition: all 0.4s ease;
       transform: translateX(4px);
