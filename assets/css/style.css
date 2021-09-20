@@ -1222,7 +1222,7 @@
 }
 
 .form input[type="text"],
-.form select {
+.form .selection {
   width: 100%;
   display: inline-block;
   padding: 10px 23px;
@@ -1266,19 +1266,38 @@
   background-color: #fff;
   font-size: 11px;
   color: #000;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .form .select-style select:focus {
   outline: none;
 }
 
-.form .select-style.custom select option {
-  border-radius: 24px;
-  background: #e6e6e6;
-  color: #000;
-  padding: 5px 14px;
+.form .select-style.normal .selection {
+  margin-bottom: 0;
+  padding-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form .select-style.normal .selection.active {
+  border-radius: 3px !important;
+}
+
+.form .select-style.normal .selection .select-title {
+  padding-top: 4px;
+}
+
+.form .select-style.normal .select .dropdown {
+  background-color: #fff;
+  padding-left: 12px;
+  border-radius: 3px;
+  padding-right: 12px;
+}
+
+.form .select-style.normal .select .dropdown li {
+  padding-top: 8px;
+  font-size: 12px;
+  padding-bottom: 8px;
 }
 
 .form .button {
@@ -1297,52 +1316,83 @@
   color: #fff;
 }
 
-.form-box .select-style .select .selection {
-  background-color: #ffffff;
-  font-size: 12px;
-  line-height: 15px;
-  padding: 10px 23px;
-  border-radius: 24px;
-}
-
-.form-box .select-style .select .selection .dropdown {
-  height: 0;
-  visibility: hidden;
+.form-box .select-style .select .dropdown {
   list-style: none;
 }
 
-.form-box .select-style .select .selection .dropdown li:not(:last-child) {
-  margin-bottom: 8px;
+.form-box .select-style .select .dropdown + .select-styled {
+  position: relative;
+  padding: 4px 8px;
+  background: #e6e6e6;
 }
 
-.form-box .select-style .select .selection:focus {
-  border-radius: 11px;
-}
-
-.form-box .select-style .select .selection:focus .dropdown {
-  margin-top: 8px;
-  height: unset;
-  visibility: unset;
-  list-style: none;
-}
-
-.form-box .select-style .select .selection:focus .dropdown li:active {
-  background-color: #E6E6E6;
-}
-
-.form-box .select-style .select .selection:focus .dropdown li:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.form-box .select-style .select .selection:focus .select-styled:after {
+.form-box .select-style .select .dropdown + .select-styled:after {
   content: "";
   width: 0;
   height: 0;
   border: 7px solid transparent;
   border-color: #000 transparent transparent transparent;
   position: absolute;
-  top: 32px;
-  right: 14px;
+  top: 50%;
+  right: 8px;
+  -webkit-transform: translate(0px, -30%);
+          transform: translate(0px, -30%);
+}
+
+.form-box .select-style .select .dropdown.collapse {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.form-box .select-style .select .dropdown li {
+  padding-top: 4px;
+}
+
+.form-box .select-style .select .dropdown li:not(:last-child) {
+  padding-bottom: 4px;
+}
+
+.form-box .select-style .select .selection {
+  background-color: #ffffff;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 6px 12px 10px 12px;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.form-box .select-style .select .selection.active {
+  border-radius: 11px;
+  margin-bottom: 0;
+}
+
+.form-box .select-style .select .selection.active .dropdown,
+.form-box .select-style .select .selection.active + .dropdown,
+.form-box .select-style .select .selection.active ~ .dropdown {
+  height: unset;
+  overflow: visible;
+  list-style: none;
+  max-height: 100px;
+  overflow: auto;
+  visibility: visible;
+}
+
+.form-box .select-style .select .selection.active .dropdown li,
+.form-box .select-style .select .selection.active + .dropdown li,
+.form-box .select-style .select .selection.active ~ .dropdown li {
+  padding-left: 8px;
+}
+
+.form-box .select-style .select .selection.active .dropdown li:active,
+.form-box .select-style .select .selection.active + .dropdown li:active,
+.form-box .select-style .select .selection.active ~ .dropdown li:active {
+  background-color: #e6e6e6;
 }
 
 .form-box .section-main__menu {
@@ -1369,7 +1419,7 @@
 .form-box .section-main__menu .button-menu .box {
   min-width: 50px;
   height: 100%;
-  background: linear-gradient(315.38deg, #E6E6E6 14.63%, #F2F2F2 85.36%);
+  background: linear-gradient(315.38deg, #e6e6e6 14.63%, #f2f2f2 85.36%);
   border-radius: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1399,7 +1449,7 @@
 }
 
 .form-box .section-main__menu .button-menu.active {
-  background-color: #303D4F;
+  background-color: #303d4f;
 }
 
 .form-box .section-main__menu .button-menu.active .box {
