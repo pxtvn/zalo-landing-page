@@ -1276,22 +1276,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: unset;
+  height: 56px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 15px;
+  padding: 3px;
   background-color: #e2e2e2;
 }
 
-.form-box .section-main__menu .button-menu img {
+.form-box .section-main__menu .button-menu .box {
+  min-width: 50px;
+  height: 100%;
+  background: linear-gradient(315.38deg, #E6E6E6 14.63%, #F2F2F2 85.36%);
+  border-radius: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px 2px #cecece;
+          box-shadow: 1px 2px #cecece;
+}
+
+.form-box .section-main__menu .button-menu .box img {
   padding: 0;
-  margin: 0;
+  margin: auto;
   height: 100%;
   width: 100%;
 }
 
 .form-box .section-main__menu .button-menu .text {
+  padding: 10px;
   width: 80%;
   text-align: left;
   color: #000000;
@@ -1301,7 +1317,13 @@
 }
 
 .form-box .section-main__menu .button-menu.active {
-  background-color: #303d4f;
+  background-color: #303D4F;
+}
+
+.form-box .section-main__menu .button-menu.active .box {
+  background: linear-gradient(315.38deg, #434e5e 14.63%, #3d4a5e 85.36%);
+  -webkit-box-shadow: 1px 2px #283241;
+          box-shadow: 1px 2px #283241;
 }
 
 .form-box .section-main__menu .button-menu.active .text {
@@ -1314,7 +1336,7 @@
 
 .form-box .rules {
   color: #ffffff;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 11px;
   margin-bottom: 18px;
 }
@@ -1325,6 +1347,7 @@
 }
 
 .form-box .rules .rules-content {
+  margin-top: 3px;
   margin-bottom: 8px;
 }
 

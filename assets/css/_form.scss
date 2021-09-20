@@ -92,17 +92,27 @@
       .button-menu {
         display: flex;
         align-items: center;
-        height: unset;
+        height: 56px;
         justify-content: space-between;
-        padding: 10px 15px;
+        padding: 3px;
         background-color: #e2e2e2;
-        img {
-          padding: 0;
-          margin: 0;
+        .box {
+          min-width: 50px;
           height: 100%;
-          width: 100%;
+          background: linear-gradient(315.38deg, #E6E6E6 14.63%, #F2F2F2 85.36%);
+          border-radius: 48px;
+          display: flex;
+          align-items: center;
+          box-shadow: 1px 2px #cecece;
+          img {
+            padding: 0;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+          }
         }
         .text {
+          padding: 10px;
           width: 80%;
           text-align: left;
           color: #000000;
@@ -111,7 +121,11 @@
           font-weight: 600;
         }
         &.active {
-          background-color: #303d4f;
+          background-color: #303D4F;
+          .box {
+            background: linear-gradient(315.38deg, #434e5e 14.63%, #3d4a5e 85.36%);
+            box-shadow: 1px 2px #283241;
+          }
           .text {
             color: #ffffff;
           }
@@ -123,7 +137,7 @@
     }
     .rules {
       color: #ffffff;
-      font-size: 9px;
+      font-size: 10px;
       line-height: 11px;
       margin-bottom: 18px;
       h3 {
@@ -131,6 +145,7 @@
         text-transform: uppercase;
       }
       .rules-content {
+          margin-top: 3px;
         margin-bottom: 8px;
       }
       .rules-check {
