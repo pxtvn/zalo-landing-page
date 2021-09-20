@@ -136,10 +136,11 @@
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  padding: 170px 35px 10px 35px;
+  padding: 0 35px 10px 35px;
   background: url("../image/section/section-inform.png") no-repeat;
   background-size: cover;
   .move-click {
+    margin-top: 13px;
     position: relative;
     min-height: 40px;
     .prev-button {
@@ -159,14 +160,37 @@
       &-circle {
         display: inline-block;
         position: relative;
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background-color: #c4c4c4;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #c4c4c4;
         &.active {
           background: #f5911e;
         }
       }
+    }
+  }
+
+  .menu {
+    background-color: unset;
+    position: relative;
+    &-left {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    &-wrap {
+      padding-top: 0;
+    }
+  }
+  .section__title {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    span {
+    font-size: 22px;
+    display: block;
     }
   }
 }
