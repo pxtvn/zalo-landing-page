@@ -137,8 +137,8 @@
     }
     .rules {
       color: #ffffff;
-      font-size: 10px;
-      line-height: 11px;
+      font-size: 9px;
+      line-height: 14px;
       margin-bottom: 18px;
       h3 {
         color: #ffffff;
@@ -154,6 +154,10 @@
         label {
           margin-left: 6px;
           font-weight: 700;
+        }
+        input {
+            width: 15px;
+            height: 15px;
         }
       }
     }
