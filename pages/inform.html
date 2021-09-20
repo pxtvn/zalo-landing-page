@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>Zalo landing page</title>
+</head>
+
+<body>
+    <div class="wrapper-inform">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="form">
+                        <div class="title">Vui lòng điền thông tin đầy đủ để nhận những nội dung hữu ích.</div>
+                        <form action="" class="form-box">
+
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="form">
+                        <div class="title"></div>
+                        <form action="" class="form-box">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+        // init Swiper:
+        const swiper = new Swiper('.swiper', {
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
