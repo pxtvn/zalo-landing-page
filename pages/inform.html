@@ -13,7 +13,8 @@
 <body>
     <div class="wrapper-inform">
         <div class="move-click">
-            <button onclick="prevStep()" class="prev-button disabled"><img src="../assets/image/icon/chevron-left.svg" alt="chevron-left"></button>
+            <button onclick="prevStep()" class="prev-button disabled"><img src="../assets/image/icon/chevron-left.svg"
+                    alt="chevron-left"></button>
             <div class="pagination">
                 <span class="pagination-circle active"></span>
                 <span class="pagination-circle"></span>
@@ -26,7 +27,7 @@
                 <input type="text" id="fname" name="fullname">
 
                 <label for="phone">Số điện thoại <span>*</span></label>
-                <input type="text" onclick = "validateform()" id="phone" name="phone">
+                <input type="text" onclick="validateform()" id="phone" name="phone">
 
                 <label for="email">Email <span>*</span> </label>
                 <input type="text" id="email" name="email">
@@ -38,7 +39,7 @@
                     <label for="company-type">Loại hình doanh nghiệp</label>
                     <select>
                         <!-- disabled hidden -->
-                        <option value="" selected >Nhà sản xuất</option>
+                        <option value="" selected>Nhà sản xuất</option>
                         <option value="">Chủ thương hiệu</option>
                         <option value="">Đơn vị phân phối</option>
                     </select>
@@ -53,13 +54,71 @@
                     </select>
                     <!-- <i class="fa fa-caret-up"></i> -->
                 </div>
-
                 <button class="button" type="button" onclick="nextStep()"><span class="text">Tiếp tục</span></button>
-
             </div>
         </div>
         <div class="form step-2 hide">
+            <div class="form">
+                <div class="title">
+                    Vui lòng chọn 03 nội dung mà bạn muốn nhận thông tin
+                </div>
+                <form action="" class="form-box">
+                    <div class="section-main__menu no-padding">
+                        <button class="button button-menu active" type="button">
+                            <img src="../assets/image/icon/sell-ligth.svg" alt="icon TMĐT Xuyên Biên Giới" />
+
+                            <p class="text truncated-2" id="p1">
+                                TMĐT xuyên biên giới và bán hàng trên Amazon
+                            </p>
+                        </button>
+                        <button class="button button-menu" type="button">
+                            <img src="../assets/image/icon/account.svg" alt="icon bán hàng" />
+                            <div class="text truncated-2" id="p1">
+                                Tạo và quản lý tài khoản bán hàng với Amazon
+                            </div>
+                        </button>
+                        <button class="button button-menu" type="button">
+                            <img src="../assets/image/icon/cart.svg" alt="icon phát triển kinh doanh" />
+                            <div class="text truncated-2">
+                                Phát triển kinh doanh bền vững cùng Amazon
+                            </div>
+                        </button>
+                        <button class="button button-menu" type="button">
+                            <img src="../assets/image/icon/question.svg" alt="icon cổng đào tạo" />
+                            <div class="text truncated-2">
+                                Tìm hiểu về các đối tác dịch vụ của Amazon
+                            </div>
+                        </button>
+                        <button class="button button-menu" type="button">
+                            <img src="../assets/image/icon/Frame.svg" alt="icon cổng đào tạo" />
+                            <div class="text truncated-2">Đào tạo bán hàng trên Amazon</div>
+                        </button>
+                    </div>
+                    <div class="rules">
+                        <h3>Điều Khoản:</h3>
+                        <p class="rules-content">
+                            Tôi đồng ý rằng Amazon Global Selling Việt Nam (sau đây gọi
+                            tắt là "AGS")hoặc bất kỳ bên thứ ba nào đại diện hợp pháp
+                            cho AGS, theo từng thời điểm, có thể tiếp thị, quảng bá
+                            và/hoặc bán các sản phẩm của AGS qua điện thoại, thư điện tử
+                            hoặc các phương tiện truyền thông điện tử khác (sau đây gọi
+                            tắt là “Mục đích”) và thu thập, sử dụng thông tin của tôi
+                            theo Chính sách về Quyền riêng tư của Công Ty mà tôi đã đọc
+                            và hiểu rõ. Tôi hiểu quyền được lựa chọn, tại bất kỳ thời
+                            điểm nào, ngưng tiếp nhận các cuộc gọi, tin nhắn SMS, thư
+                            điện tử hoặc các phương tiện truyền thông điện tử khác cho
+                            “Mục đích” nói trên.
+                        </p>
+                        <div class="rules-check">
+                            <input type="checkbox" id="acpt" name="acpt" />
+                            <label for="acpt">Đồng Ý</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">Đăng ký</button>
+                </form>
+            </div>
         </div>
+    </div>
     </div>
 
     <script src="../assets/js/main.js"></script>
