@@ -69,7 +69,7 @@ window.addEventListener("scroll", (e) => {
 
   newValue = window.scrollY;
   console.log(text)
-  if (sticky < newValue + 170) {
+  if (sticky < newValue + 160) {
     a.classList.add('show');
     setTimeout(function(){ a.style.display = 'block' }, 200);
     document.getElementById("change-text").innerHTML = text;
