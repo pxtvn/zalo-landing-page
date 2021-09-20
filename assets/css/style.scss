@@ -106,8 +106,9 @@ html {
   }
 
   &-menu {
-    position: -webkit-sticky;
-    position: sticky;
+    // position: -webkit-sticky;
+    // position: sticky;
+    position: fixed;
     top: 60px;
     visibility: hidden;
     opacity: 0.5s;
