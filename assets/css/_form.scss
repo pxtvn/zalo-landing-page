@@ -13,16 +13,17 @@
       .button-menu {
         display: flex;
         align-items: center;
+        height: unset;
         justify-content: space-between;
-        padding: 14px 15px;
+        padding: 10px 15px;
         background-color: #e2e2e2;
-        // img {
-        //   padding: 0;
-        //   background-color: #000000;
-        //   margin: 0;
-        //   height: 100%;
-        //   width: 100%;
-        // }
+        img {
+          padding: 0;
+          // background-color: #000000;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+        }
         .text {
           width: 80%;
           text-align:left;
