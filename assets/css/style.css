@@ -1186,12 +1186,106 @@
   background: #f5911e;
 }
 
+.form {
+  margin-bottom: 50px;
+}
+
 .form .title {
   font-weight: bold;
   font-size: 22px;
   line-height: 28px;
   color: #ffffff;
   margin-bottom: 21px;
+}
+
+.form .form-box .section-main__menu {
+  margin: 0 0 30px 0;
+}
+
+.form .form-box .section-main__menu .button-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: unset;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #e2e2e2;
+}
+
+.form .form-box .section-main__menu .button-menu img {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.form .form-box .section-main__menu .button-menu .text {
+  width: 80%;
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.form .form-box .section-main__menu .button-menu.active {
+  background-color: #303D4F;
+}
+
+.form .form-box .section-main__menu .button-menu.active .text {
+  color: #ffffff;
+}
+
+.form .form-box .section-main__menu .button-menu:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.form .form-box .rules {
+  color: #FFFFFF;
+  font-size: 9px;
+  line-height: 11px;
+  margin-bottom: 18px;
+}
+
+.form .form-box .rules h3 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.form .form-box .rules .rules-content {
+  margin-bottom: 8px;
+}
+
+.form .form-box .rules .rules-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .form-box .rules .rules-check label {
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+.form .form-box .btn-primary {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  background-color: #F5911E;
+  border: none;
+  border-radius: 40px;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .truncated {
