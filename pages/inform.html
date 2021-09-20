@@ -1,65 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/font/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/font/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>Zalo landing page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper-inform">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="form">
-                        <div class="title">Vui lòng điền thông tin đầy đủ để nhận những nội dung hữu ích.</div>
-                        <form action="" class="form-box">
-
-                        </form>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="form">
-                        <div class="title"></div>
-                        <form action="" class="form-box">
-
-                        </form>
-                    </div>
-                </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="form">
+              <div class="title">
+                Vui lòng điền thông tin đầy đủ để nhận những nội dung hữu ích.
+              </div>
+              <form action="" class="form-box"></form>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+          </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+          <div class="swiper-slide">
+            <div class="form">
+              <div class="title">
+                Vui lòng chọn 03 nội dung mà bạn muốn nhận thông tin
+              </div>
+              <form action="" class="form-box">
+                <div class="section-main__menu no-padding">
+                  <button class="button button-menu active" type="button">
+                    <img
+                      src="../assets/image/icon/sell-ligth.svg"
+                      alt="icon TMĐT Xuyên Biên Giới"
+                    />
 
+                    <div class="text truncated-2" id="p1">
+                      TMĐT xuyên biên giới và bán hàng trên Amazon
+                    </div>
+                  </button>
+                  <button class="button button-menu" type="button">
+                    <img
+                      src="../assets/image/icon/account.svg"
+                      alt="icon bán hàng"
+                    />
+                    <div class="text truncated-2" id="p1">
+                      Tạo và quản lý tài khoản bán hàng với Amazon
+                    </div>
+                  </button>
+                  <button class="button button-menu" type="button">
+                    <img
+                      src="../assets/image/icon/cart.svg"
+                      alt="icon phát triển kinh doanh"
+                    />
+                    <div class="text truncated-2">
+                      Phát triển kinh doanh bền vững cùng Amazon
+                    </div>
+                  </button>
+                  <button class="button button-menu" type="button">
+                    <img
+                      src="../assets/image/icon/question.svg"
+                      alt="icon cổng đào tạo"
+                    />
+                    <div class="text truncated-2">
+                      Tìm hiểu về các đối tác dịch vụ của Amazon
+                    </div>
+                  </button>
+                  <button class="button button-menu" type="button">
+                    <img
+                      src="../assets/image/icon/Frame.svg"
+                      alt="icon cổng đào tạo"
+                    />
+                    <div class="text truncated-2">Đào tạo bán hàng trên Amazon</div>
+                  </button>
+                </div>
+                <div class="rules">
+                  <h3>Điều Khoản:</h3>
+                  <p class="rules-content">
+                    Tôi đồng ý rằng Amazon Global Selling Việt Nam (sau đây gọi
+                    tắt là "AGS") hoặc bất kỳ bên thứ ba nào đại diện hợp pháp
+                    cho AGS, theo từng thời điểm, có thể tiếp thị, quảng bá
+                    và/hoặc bán các sản phẩm của AGS qua điện thoại, thư điện tử
+                    hoặc các phương tiện truyền thông điện tử khác (sau đây gọi
+                    tắt là “Mục đích”) và thu thập, sử dụng thông tin của tôi
+                    theo Chính sách về Quyền riêng tư của Công Ty mà tôi đã đọc
+                    và hiểu rõ. Tôi hiểu quyền được lựa chọn, tại bất kỳ thời
+                    điểm nào, ngưng tiếp nhận các cuộc gọi, tin nhắn SMS, thư
+                    điện tử hoặc các phương tiện truyền thông điện tử khác cho
+                    “Mục đích” nói trên.
+                  </p>
+                  <div class="rules-check">
+                    <input type="checkbox" id="acpt" name="acpt" />
+                    <label for="acpt">Đồng Ý</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn-primary">Đăng ký</button>
+              </form>
+            </div>
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
     <script type="module">
-        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+      import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
 
-        // init Swiper:
-        const swiper = new Swiper('.swiper', {
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
+      // init Swiper:
+      const swiper = new Swiper(".swiper", {
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
     <script type="module" src="../assets/js/main.js"></script>
-</body>
+  </body>
+</html>
