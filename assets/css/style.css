@@ -1314,6 +1314,8 @@
           justify-content: space-between;
   padding: 3px;
   background-color: #e2e2e2;
+  -webkit-box-shadow: inset 0px 2px 7px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0px 2px 7px rgba(0, 0, 0, 0.35);
 }
 
 .form-box .section-main__menu .button-menu .box {
