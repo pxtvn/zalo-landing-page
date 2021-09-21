@@ -26,17 +26,31 @@ nextStep.addEventListener("click", function (e) {
   getStep2.classList.remove("hide");
 });
 // active button
-const active = document.querySelectorAll(".button-choose");
-active.forEach((activ) => {
-  activ.addEventListener("click", () => {
-    activ.classList.toggle("active");
-    if (activ.classList.contains("active")) {
-      document.getElementById("btn-register").disabled = false;
+var list = document.querySelectorAll(".button-choose");
+var btnRegister = document.getElementById('btn-register')
+const limit = 3;
+
+list.forEach((item) => {
+  item.addEventListener('click', (e)=> {
+    const currentActiveValue = item.classList.contains('active')
+    if (currentActiveValue) {
+      item.classList.toggle('active')
     } else {
-      document.getElementById("btn-register").disabled = true;
+      if (
+        [...list].filter((e) => e.classList.contains('active')).length < limit
+      ) {
+        item.classList.toggle('active')
+      } else {
+        alert("Chọn tối đa 3 nội dung..")
+      }
     }
-  });
-});
+    checkRegisterButton();
+  })
+})
+
+function checkRegisterButton() {
+  btnRegister.disabled = ![...list].some((e) => e.classList.contains('active'))
+}
 
 // custom select
 const select = document.querySelectorAll(".selection");
