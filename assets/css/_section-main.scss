@@ -125,14 +125,6 @@
       }
     }
   }
-
-  @media screen and (max-width: 600px) and (min-width: 440px) {
-    &__box {
-      .background-box {
-        height: 80%;
-      }
-    }
-  }
 }
 
 .section-why {
@@ -191,6 +183,10 @@
         color: #000;
       }
     }
+  }
+
+  @media screen and (max-width: 480px) and (min-width: 420px) {
+    margin-top: 90px;
   }
 }
 
