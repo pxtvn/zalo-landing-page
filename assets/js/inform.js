@@ -30,6 +30,11 @@ const active = document.querySelectorAll(".button-choose");
 active.forEach((activ) => {
   activ.addEventListener("click", () => {
     activ.classList.toggle("active");
+    if (activ.classList.contains("active")) {
+      document.getElementById("btn-register").disabled = false;
+    } else {
+      document.getElementById("btn-register").disabled = true;
+    }
   });
 });
 
