@@ -18,11 +18,6 @@
   }
 }
 .wrapper-tmdtxbg {
-  .section-main {
-    &__box {
-      background: url("../image/section/section-main-tmdtxbg.svg") no-repeat;
-    }
-  }
   @media screen and (min-width: 400px) {
     .section-main {
       &__box {
@@ -87,7 +82,7 @@
     &__box {
       margin-bottom: 25px;
       height: 62%;
-      background: url("../image/section/section-ttnph.svg") no-repeat;
+      // background: url("../image/section/section-ttnph.svg") no-repeat;
       background-size: cover;
 
       .breadcumbs {
