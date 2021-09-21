@@ -1,11 +1,23 @@
 .section-main {
   &__box {
-    background: url("../image/section/section-amazon.svg") no-repeat;
+    // background: url("../image/section/section-amazon.svg") no-repeat;
     width: 100%;
     height: 100%;
     padding-left: 36px;
     padding-right: 36px;
+    .background-box {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      top: 60px;
+      img {
+        width: 100vw;
+      }
+    }
+
     .section__title {
+      position: relative;
       font-weight: bold;
       padding-top: 225px;
       padding-bottom: 35px;
@@ -21,7 +33,6 @@
 
     &.not-breadcumbs {
       text-align: center;
-      background-size: cover;
       padding-bottom: 83px;
       .section-main__menu {
         padding: 0;
@@ -29,6 +40,7 @@
     }
   }
   .breadcumbs {
+    position: relative;
     font-size: 10px;
     font-weight: 400;
     padding-bottom: 25px;
@@ -46,6 +58,7 @@
   }
 
   &__menu {
+    position: relative;
     padding-left: 35px;
     padding-right: 35px;
     .button-menu {
@@ -98,6 +111,25 @@
     &__box {
       &.not-breadcumbs {
         height: 714px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    &__box {
+      .section__title {
+        padding-top: 140px;
+        &.main {
+          font-size: 29px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) and (min-width: 440px) {
+    &__box {
+      .background-box {
+        height: 80%;
       }
     }
   }
