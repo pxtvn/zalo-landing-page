@@ -19,13 +19,13 @@
     width: 100%;
     display: inline-block;
     padding: 10px 23px;
-    margin-bottom: 15px;
+    margin-bottom: 4px;
     margin-top: 4px;
     border-radius: 24px;
     box-sizing: border-box;
     border: none;
     outline: none;
-    font-size: 10px;
+    font-size: 11px;
     color: #000;
   }
 
@@ -69,7 +69,10 @@
             border-radius: 3px !important;
           }
           .select-title {
+            font-size: 11px;
             padding-top: 4px;
+            padding-left: 8px;
+            padding-bottom: 4px;
           }
         }
         .dropdown {
@@ -79,7 +82,6 @@
           padding-right: 12px;
           li {
             padding-top: 8px;
-            font-size: 12px;
             padding-bottom: 8px;
           }
         }
@@ -100,6 +102,13 @@
 
       color: #fff;
     }
+    &:disabled,
+    &[disabled] {
+      background-color: #303d4f;
+      .text {
+        color: #cecece;
+      }
+    }
   }
   &-box {
     .select-style {
@@ -111,6 +120,7 @@
           & + .select-styled {
             position: relative;
             padding: 4px 8px;
+            font-size: 11px;
             background: #e6e6e6;
             &:after {
               content: "";
@@ -130,6 +140,7 @@
           }
           li {
             padding-top: 4px;
+            font-size: 11px;
             &:not(:last-child) {
               padding-bottom: 4px;
             }
@@ -139,7 +150,7 @@
           background-color: #ffffff;
           font-size: 12px;
           line-height: 15px;
-          padding: 6px 12px 10px 12px;
+          padding: 6px 12px 6px 12px;
           border-radius: 24px;
           display: flex;
           flex-direction: column-reverse;
@@ -250,20 +261,19 @@
         }
       }
     }
-    .btn-primary {
-      color: #ffffff;
-      font-size: 12px;
-      line-height: 15px;
-      font-weight: 700;
-      background-color: #f5911e;
-      border: none;
-      border-radius: 40px;
-      width: 100%;
-      padding-top: 6px;
-      padding-bottom: 6px;
-    }
   }
   &.hide {
     display: none;
+  }
+}
+
+
+
+.form-group {
+  margin-bottom: 12px;
+  .form-msg {
+    color: rgb(226, 31, 31);
+    font-size: 9px;
+    line-height: 10px;
   }
 }

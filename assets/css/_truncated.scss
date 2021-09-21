@@ -1,19 +1,18 @@
-.truncated {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
-.truncated-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
+.truncated,
+.truncated-2,
 .truncated-3 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+}
+
+.truncated {
+  -webkit-line-clamp: 1;
+}
+.truncated-2 {
+  -webkit-line-clamp: 2;
+}
+
+.truncated-3 {
   -webkit-line-clamp: 3;
 }
