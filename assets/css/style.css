@@ -1285,6 +1285,8 @@
 
 .form .select-style.normal .selection .select-title {
   padding-top: 4px;
+  padding-left: 8px;
+  padding-bottom: 4px;
 }
 
 .form .select-style.normal .select .dropdown {
@@ -1356,7 +1358,7 @@
   background-color: #ffffff;
   font-size: 12px;
   line-height: 15px;
-  padding: 6px 12px 10px 12px;
+  padding: 6px 12px 6px 12px;
   border-radius: 24px;
   display: -webkit-box;
   display: -ms-flexbox;

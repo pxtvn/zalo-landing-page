@@ -34,18 +34,15 @@ active.forEach((activ) => {
 });
 
 // custom select
-// const selectToggle = document.getElementsByClassName("dropdown")[1];
-const select = document.getElementById("selectToggle");
+const select = document.querySelectorAll(".selection");
 const options = document.querySelectorAll(".option");
 const selectlabel = document.querySelector("#select-label");
+const selectlabel2 = document.querySelector("#select-label2");
 
-console.log(options)
-function toggleHidden() {
-  select.classList.toggle("active");
-}
-
-select.addEventListener("click", function (e) {
-  toggleHidden();
+select.forEach((activ) => {
+  activ.addEventListener("click", function (e) {
+    activ.classList.toggle("active");
+  });
 });
 
 options.forEach(function (option) {
@@ -56,5 +53,7 @@ options.forEach(function (option) {
 
 function setSelectTitle(e) {
   const label = document.querySelector(`li[value="${e.target.id}"]`).innerHTML;
-  selectlabel.innerHTML = label
+  selectlabel.innerHTML = label;
+  selectlabel2.innerHTML = label;
+  select.classList.remove("active");
 }
