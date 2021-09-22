@@ -107,17 +107,13 @@ html {
   }
 
   &-menu {
-    // position: -webkit-sticky;
-    // position: sticky;
     width: 100%;
     position: fixed;
-    top: 60px;
-    visibility: hidden;
+    top: -60px;
     z-index: 9999;
-    opacity: 0.5s;
-    display: none;
+    transition: all 0.35s ease;
     &.show {
-      visibility: visible;
+      top: 63px;
     }
   }
   .button {

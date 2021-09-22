@@ -1714,15 +1714,14 @@ html {
 .sticky-menu {
   width: 100%;
   position: fixed;
-  top: 60px;
-  visibility: hidden;
+  top: -60px;
   z-index: 9999;
-  opacity: 0.5s;
-  display: none;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .sticky-menu.show {
-  visibility: visible;
+  top: 63px;
 }
 
 .sticky .button {

@@ -94,11 +94,9 @@ window.addEventListener("scroll", (e) => {
   if (sticky) {
     if (sticky < newValue + 170) {
       a.classList.add("show");
-      a.style.display = "block";
       document.getElementById("change-text").innerHTML = document.querySelector("#p1").textContent;
     } else {
       a.classList.remove("show");
-      a.style.display = "none";
     }
   }
 
