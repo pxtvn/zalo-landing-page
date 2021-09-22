@@ -12,6 +12,16 @@
 
 <body>
   <div class="wrapper-ttnph">
+
+    <div class="sticky-menu">
+      <div class="sticky">
+        <button class="button" type="button"><i class="fa fa-chevron-right"></i></button>
+        <div class="text">
+          <a id="change-text"></a>
+        </div>
+      </div>
+    </div>
+
     <div class="menu-wrap">
       <div class="menu">
         <div class="menu-left">
@@ -95,30 +105,22 @@
           </h1>
         </div>
         <div class="section-main__menu">
-            <button class="button button-menu" type="button">
-              <a href="#second">
-                <div class="text">Trước khi bán hàng</div>
-              </a>
+            <button class="button button-menu" type="button" onclick="onclickss1()">
+                <div class="text" id="p1">Trước khi bán hàng</div>
             </button>
-            <button class="button button-menu" type="button">
-              <a href="#second">
-                <div class="text">Đăng ký tài khoản</div>
-              </a>
+            <button class="button button-menu" type="button" onclick="onclickss2()">
+                <div class="text" id="p2">Đăng ký tài khoản</div>
             </button>
-            <button class="button button-menu" type="button">
-              <a href="#second">
-                <div class="text">Chi phí bán hàng</div>
-              </a>
+            <button class="button button-menu" type="button" onclick="onclickss3()">
+                <div class="text" id="p3">Chi phí bán hàng</div>
             </button>
-            <button class="button button-menu" type="button">
-              <a href="#second">
-                <div class="text">Phương thức giao hàng</div>
-              </a>
+            <button class="button button-menu" type="button" onclick="onclickss4()">
+                <div class="text" id="p4">Phương thức giao hàng</div>
             </button>
           </div>
     </section>
   
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss1">
       <h3 class="section__title title-custom">Trước khi <span class="highlights">Bán hàng</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -172,7 +174,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss2">
       <h3 class="section__title title-custom">Đăng ký <span class="highlights">Tài khoản</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -226,7 +228,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss3">
       <h3 class="section__title title-custom">Chi phí <span class="highlights">Bán hàng</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -280,7 +282,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss4">
       <h3 class="section__title title-custom">Phương thức <span class="highlights">giao hàng</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">

@@ -12,6 +12,16 @@
 
 <body>
   <div class="wrapper-ptkd">
+
+    <div class="sticky-menu">
+      <div class="sticky">
+        <button class="button" type="button"><i class="fa fa-chevron-right"></i></button>
+        <div class="text">
+          <a id="change-text"></a>
+        </div>
+      </div>
+    </div>
+
     <div class="menu-wrap">
       <div class="menu">
         <div class="menu-left">
@@ -96,35 +106,25 @@
           <img class="bg-section-2" src="../assets/image/section/section-ptkd2.svg" alt="section ptkd">
         </div>
         <div class="section-main__menu">
-          <button class="button button-menu" type="button">
-            <a href="#second">
-              <div class="text">Tạo gian hàng trực tuyến</div>
-            </a>
+          <button class="button button-menu" type="button" onclick="onclickss1()">
+              <div class="text" id="p1">Tạo gian hàng trực tuyến</div>
           </button>
-          <button class="button button-menu" type="button">
-            <a href="#second">
-              <div class="text">Hoàn thiện đơn hàng bởi Amazon (FBA)</div>
-            </a>
+          <button class="button button-menu" type="button" onclick="onclickss2()">
+              <div class="text" id="p2">Hoàn thiện đơn hàng bởi Amazon (FBA)</div>
           </button>
-          <button class="button button-menu" type="button">
-            <a href="#second">
-              <div class="text">Xây dựng thương hiệu</div>
-            </a>
+          <button class="button button-menu" type="button" onclick="onclickss3()">
+              <div class="text" id="p3">Xây dựng thương hiệu</div>
           </button>
-          <button class="button button-menu" type="button">
-            <a href="#second">
-              <div class="text">Quảng cáo & tiếp thị trên Amazon</div>
-            </a>
+          <button class="button button-menu" type="button" onclick="onclickss4()">
+              <div class="text" id="p4">Quảng cáo & tiếp thị trên Amazon</div>
           </button>
-          <button class="button button-menu" type="button">
-            <a href="#second">
-              <div class="text">Nhà cung cấp dịch vụ</div>
-            </a>
+          <button class="button button-menu" type="button" onclick="onclickss5()">
+              <div class="text" id="p5">Nhà cung cấp dịch vụ</div>
           </button>
         </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss1">
       <h3 class="section__title title-custom">Tạo gian hàng <span class="highlights">Trực tuyến</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -178,7 +178,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss2">
       <h3 class="section__title title-custom">Hoàn thiện đơn hàng <span class="highlights">Bởi Amazon (FBA)</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -232,7 +232,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss3">
       <h3 class="section__title title-custom">Xây dựng <span class="highlights">Thương hiệu</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -286,7 +286,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss4">
       <h3 class="section__title title-custom">Quảng cáo & tiếp thị <span class="highlights">Trên Amazon</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -340,7 +340,7 @@
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss5">
       <h3 class="section__title title-custom">Nhà cung cấp <span class="highlights">Dịch vụ</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">

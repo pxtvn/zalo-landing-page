@@ -12,6 +12,16 @@
 
 <body>
   <div class="wrapper-tmdtxbg">
+
+    <div class="sticky-menu">
+      <div class="sticky">
+        <button class="button" type="button"><i class="fa fa-chevron-right"></i></button>
+        <div class="text">
+          <a id="change-text"></a>
+        </div>
+      </div>
+    </div>
+
     <div class="menu-wrap">
       <div class="menu">
         <div class="menu-left">
@@ -94,25 +104,19 @@
         </h1>
       </div>
       <div class="section-main__menu">
-        <button class="button button-menu" type="button">
-          <a href="#second">
-            <div class="text">Hướng dẫn kinh doanh TMĐT Xuyên Biên Giới </div>
-          </a>
+        <button class="button button-menu" type="button" onclick="onclickss1()">
+            <div class="text" id="p1">Hướng dẫn kinh doanh TMĐT Xuyên Biên Giới </div>
         </button>
-        <button class="button button-menu" type="button">
-          <a href="#second">
-            <div class="text">Bán hàng toàn cầu trên Amazon </div>
-          </a>
+        <button class="button button-menu" type="button" onclick="onclickss2()">
+            <div class="text" id="p2">Bán hàng toàn cầu trên Amazon </div>
         </button>
-        <button class="button button-menu" type="button">
-          <a href="#second">
-            <div class="text">Bài học bán hàng thành công</div>
-          </a>
+        <button class="button button-menu" type="button" onclick="onclickss3()">
+            <div class="text" id="p3">Bài học bán hàng thành công</div>
         </button>
       </div>
     </section>
 
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss1">
       <h3 class="section__title title-custom">Hướng dẫn kinh doanh <span class="highlights">TMĐT xuyên biên giới</span>
       </h3>
       <div class="section__list">
@@ -166,7 +170,7 @@
         </div>
       </div>
     </section>
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss2">
       <h3 class="section__title title-custom">Bán hàng toàn cầu <span class="highlights">trên Amazon</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -219,7 +223,7 @@
         </div>
       </div>
     </section>
-    <section class="section-list-box">
+    <section class="section-list-box" id="ss3">
       <h3 class="section__title title-custom">Bài học bán hàng <span class="highlights">Thành công</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">

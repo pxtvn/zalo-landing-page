@@ -67,16 +67,22 @@
       border-radius: 43px;
       padding: 3px 6px 3px 6px;
       height: 39px;
+      display: flex;
+      align-items: center;
       &:not(:last-child) {
         margin-bottom: 9px;
       }
-      img {
-        max-width: 28px;
+      .box {
+        width: 28px;
         max-height: 28px;
         margin-left: 14px;
         margin-bottom: 1px;
+          img {
+            width: 100%;
+            height: auto;
+          }
         & + .text {
-          margin-left: 16px;
+          padding-left: 16px;
           justify-content: flex-start;
           text-align: left;
         }
@@ -94,10 +100,6 @@
           padding-right: 17px;
         }
       }
-    }
-    a {
-      display: flex;
-      align-items: center;
     }
   }
 
