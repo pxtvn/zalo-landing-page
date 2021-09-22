@@ -268,6 +268,7 @@
   width: 100%;
   max-height: 0;
   font-size: 11px;
+  padding-left: 35px;
   overflow: hidden;
 }
 
@@ -276,12 +277,13 @@
   transition: all .45s ease;
 }
 
-.accordion__body p {
+.accordion__body a {
   color: inherit;
+  display: block;
   line-height: 20px;
 }
 
-.accordion__body p.title {
+.accordion__body a.title {
   color: #12416b;
   font-weight: 700;
   padding-top: 12px;
@@ -1082,6 +1084,21 @@
   margin-right: 45px;
   border-top-right-radius: 91px;
   border-bottom-right-radius: 91px;
+}
+
+@media screen and (max-width: 480px) and (min-width: 400px) {
+  .wrapper-ptkd .section-main__box {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .wrapper-ptkd .section-main__box {
+    height: 320px;
+  }
+  .wrapper-ptkd .section-main__box .section__title {
+    font-size: 25px;
+  }
 }
 
 .wrapper-ttnph .section-main__box {

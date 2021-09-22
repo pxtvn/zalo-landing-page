@@ -57,7 +57,6 @@ function findPos(obj) {
   var curtop = 0;
   if (obj.offsetParent) {
     do {
-      document.getElementsByClassName("sticky-menu")[0].style.top = "60px";
       curtop += obj.offsetTop - 70;
     } while ((obj = obj.offsetParent));
     return [curtop];

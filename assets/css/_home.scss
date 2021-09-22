@@ -60,6 +60,23 @@
       }
     }
   }
+  @media screen and (max-width: 480px) and (min-width: 400px) {
+    .section-main {
+      &__box {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .section-main {
+      &__box {
+      height: 320px;
+      .section__title {
+        font-size: 25px;
+      }
+    }
+    }
+  }
 }
 
 .wrapper-ttnph {
@@ -169,8 +186,8 @@
     text-transform: uppercase;
     font-size: 16px;
     span {
-    font-size: 22px;
-    display: block;
+      font-size: 22px;
+      display: block;
     }
   }
 }
