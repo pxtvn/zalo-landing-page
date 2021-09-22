@@ -58,7 +58,7 @@ function findPos(obj) {
   if (obj.offsetParent) {
     do {
       document.getElementsByClassName("sticky-menu")[0].style.top = "60px";
-      curtop += obj.offsetTop - 140;
+      curtop += obj.offsetTop - 70;
     } while ((obj = obj.offsetParent));
     return [curtop];
   }
@@ -95,9 +95,7 @@ window.addEventListener("scroll", (e) => {
   if (sticky) {
     if (sticky < newValue + 170) {
       a.classList.add("show");
-      setTimeout(function () {
-        a.style.display = "block";
-      }, 200);
+      a.style.display = "block";
       document.getElementById("change-text").innerHTML = document.querySelector("#p1").textContent;
     } else {
       a.classList.remove("show");
