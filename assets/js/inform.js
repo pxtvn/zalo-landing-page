@@ -41,7 +41,8 @@ list.forEach((item) => {
       ) {
         item.classList.toggle('active')
       } else {
-        alert("Chọn tối đa 3 nội dung..")
+        // alert("Chọn tối đa 3 nội dung..")
+        return ;
       }
     }
     checkRegisterButton();
@@ -76,3 +77,5 @@ function setSelectTitle(e) {
   selectlabel2.innerHTML = label;
   select.classList.remove("active");
 }
+
+
