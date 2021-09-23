@@ -27,6 +27,10 @@
       &.main {
         font-size: 35px;
       }
+
+      & + .section-main__menu {
+        padding-bottom: calc(100% - 35px);
+      }
     }
   }
   &__menu {

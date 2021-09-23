@@ -330,6 +330,10 @@
   font-size: 35px;
 }
 
+.section-main__box .section__title + .section-main__menu {
+  padding-bottom: calc(100% - 35px);
+}
+
 .section-main__menu {
   position: relative;
   padding-left: 35px;
@@ -998,10 +1002,6 @@
 .wrapper-home .section-list-box .section__list {
   padding-left: 35px;
   padding-right: 35px;
-}
-
-.wrapper-home .section-main {
-  margin-bottom: 80px;
 }
 
 .wrapper-home .section-main .section__title {
