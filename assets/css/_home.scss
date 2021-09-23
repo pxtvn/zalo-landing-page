@@ -110,6 +110,14 @@
   .card {
     padding-left: 0;
     padding-right: 0;
+    &__image {
+      padding: unset;
+      img {
+        width: 100%;
+        max-height: unset;
+        height: 273px;
+      }
+    }
   }
   .section-main {
     &__box {
@@ -188,6 +196,36 @@
     span {
       font-size: 22px;
       display: block;
+    }
+  }
+}
+
+.wrapper-list {
+  background-color: #F2F2F2;
+  .section-main {
+    &__box {
+      padding-left: 35px;
+      padding-right: 144px;
+      .section__title {
+        color: #242D3C;
+        padding-top: 32px;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: left;
+        text-shadow: none;
+        &.highlights {
+          color: #f7941d;
+        }
+      }
+    }
+    @media screen and (min-width: 400px) {
+      &__box {
+        padding-right: 160px;
+        .section__title {
+          padding-top: 4rem;
+          padding-bottom: 5rem;
+        }
+      }
     }
   }
 }
