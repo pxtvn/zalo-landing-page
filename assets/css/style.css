@@ -331,7 +331,7 @@
 }
 
 .section-main__box .section__title + .section-main__menu {
-  padding-bottom: calc(100% - 35px);
+  padding-bottom: calc(100% - 225px);
 }
 
 .section-main__menu {
@@ -1006,7 +1006,7 @@
 
 .wrapper-home .section-main .section__title {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 225px;
 }
 
 .wrapper-home .section-main .section-main__menu {
