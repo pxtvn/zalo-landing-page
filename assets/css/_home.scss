@@ -70,11 +70,11 @@
   @media screen and (max-width: 360px) {
     .section-main {
       &__box {
-      height: 320px;
-      .section__title {
-        font-size: 25px;
+        height: 320px;
+        .section__title {
+          font-size: 25px;
+        }
       }
-    }
     }
   }
 }
@@ -110,6 +110,13 @@
   .card {
     padding-left: 0;
     padding-right: 0;
+    &__image {
+      padding: unset;
+      img {
+        width: 100%;
+        height: 273px;
+      }
+    }
   }
   .section-main {
     &__box {
@@ -188,6 +195,92 @@
     span {
       font-size: 22px;
       display: block;
+    }
+  }
+}
+
+.wrapper-template {
+  background-color: #f2f2f2;
+  .section-main {
+    &__box {
+      padding-left: 35px;
+      padding-right: 144px;
+      .section__title {
+        color: #242d3c;
+        padding-top: 32px;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: left;
+        text-shadow: none;
+        &.highlights {
+          color: #f7941d;
+        }
+      }
+    }
+    @media screen and (min-width: 400px) {
+      &__box {
+        padding-right: 160px;
+        .section__title {
+          padding-top: 4rem;
+          padding-bottom: 5rem;
+        }
+      }
+    }
+  }
+
+  .section-news {
+    &.section-list-box {
+      padding: 0;
+      border: none;
+    }
+    .section__list {
+      margin-bottom: 80px;
+      .section__item {
+        border: 1px solid #cee3f4;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 14px -1px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        &.one-line {
+          width: calc(100% - 1rem);
+        }
+        .card {
+          padding: 0;
+          &__section {
+            background-color: unset;
+          }
+          &__image {
+            padding: 15px 18px 18px;
+            img {
+              width: 100%;
+              height: unset;
+              min-height: 127px;
+            }
+          }
+          &__title {
+            font-size: 14px;
+            line-height: 17px;
+          }
+          &__desc {
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 12px;
+          }
+
+          &__end {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            .full-time {
+              padding: unset;
+            }
+          }
+          .see-more {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }
