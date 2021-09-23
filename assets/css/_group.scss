@@ -1,0 +1,28 @@
+.group-3,
+.group,
+.group-2 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.group-3 {
+  .section__item {
+    width: calc(33.33% - 1rem);
+    margin-right: 8px;
+    margin-left: 8px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .section__item {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}

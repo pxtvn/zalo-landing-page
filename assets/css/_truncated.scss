@@ -1,6 +1,7 @@
 .truncated,
 .truncated-2,
-.truncated-3 {
+.truncated-3,
+.truncated-4 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -15,4 +16,8 @@
 
 .truncated-3 {
   -webkit-line-clamp: 3;
+}
+
+.truncated-4 {
+  -webkit-line-clamp: 4;
 }

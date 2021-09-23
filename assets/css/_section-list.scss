@@ -174,10 +174,6 @@
         }
       }
     }
-    .see-more-right {
-      display: flex;
-      flex-direction: row-reverse;
-    }
   }
 }
 
@@ -199,19 +195,31 @@
   &.white-bg {
     background-color: #fff;
   }
-  &.no-bg {
-    background-color: unset;
-    flex-direction: row-reverse;
-    padding-left: 0;
-    img {
-       width: 18px;
-    }
-    span {
-      font-size: 10px;
-      font-style: italic;
-      margin-left: 10px;
-      margin-right: 0px;
-    }
+  // &.no-bg {
+  //   background-color: unset;
+  //   padding-left: 0;
+  //   img {
+  //     width: 18px;
+  //   }
+  //   span {
+  //     font-size: 10px;
+  //   }
+  // }
+
+  &.full {
+    border-radius: 31px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C4C4;
+    font-size: 12px;
+    padding: 10px;
+     img {
+      margin-bottom: 0;
+      padding-left: 4px;
+      width: 18px;
+     }
   }
   &:active, &:hover {
     span, img {

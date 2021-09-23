@@ -126,6 +126,5 @@ window.addEventListener("scroll", (e) => {
 
   if (stickyFooter < newValue + 240) {
     a.classList.remove("show");
-    a.style.display = "none";
   }
 });

@@ -16,29 +16,22 @@
       padding-right: 35px;
     }
   }
+  .section-main {
+    .section__title {
+      text-align: center;
+      padding-top: 70px;
+    }
+    .section-main__menu {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    margin-bottom: 80px;
+  }
 }
 .wrapper-tmdtxbg {
-  @media screen and (min-width: 400px) {
-    .section-main {
-      &__box {
-        height: 550px;
-        background-size: contain;
-      }
-    }
-  }
-  @media screen and (min-width: 470px) {
-    .section-main {
-      &__box {
-        height: 640px;
-        background-size: contain;
-      }
-    }
-  }
-  @media screen and (max-width: 361px) {
-    .section-main {
-      &__box {
-        height: 500px;
-      }
+  .section-main {
+    .section__title {
+      padding-bottom: 100%;
     }
   }
 }
@@ -47,16 +40,17 @@
   .section-main {
     &__box {
       margin-bottom: 25px;
-      height: 340px;
+      height: 280px;
       .section__title {
         background: #12416b;
         box-shadow: inset 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
         padding: 14px 20px 14px 20px;
         margin-left: -36px;
-        margin-right: -35px;
+        // margin-right: -35px;
         margin-right: 45px;
         border-top-right-radius: 91px;
         border-bottom-right-radius: 91px;
+        margin-top: 70px;
       }
     }
   }
@@ -70,7 +64,7 @@
   @media screen and (max-width: 360px) {
     .section-main {
       &__box {
-        height: 320px;
+        height: 220px;
         .section__title {
           font-size: 25px;
         }
@@ -84,12 +78,7 @@
     &__box {
       margin-bottom: 25px;
       height: 62%;
-      // background: url("../image/section/section-ttnph.svg") no-repeat;
-      background-size: cover;
 
-      .breadcumbs {
-        color: #8d8d8d;
-      }
       .section__title {
         color: #12416b;
         padding-bottom: 100%;
@@ -120,11 +109,6 @@
   }
   .section-main {
     &__box {
-      background: url("");
-
-      .breadcumbs {
-        color: #8d8d8d;
-      }
       .section__title {
         color: #12416b;
         padding-bottom: 0;
@@ -210,8 +194,6 @@
         padding-top: 32px;
         font-size: 22px;
         line-height: 27px;
-        text-align: left;
-        text-shadow: none;
         &.highlights {
           color: #f7941d;
         }
@@ -241,9 +223,6 @@
         box-shadow: 0px 4px 14px -1px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         overflow: hidden;
-        &.one-line {
-          width: calc(100% - 1rem);
-        }
         .card {
           padding: 0;
           &__section {
@@ -260,6 +239,7 @@
           &__title {
             font-size: 14px;
             line-height: 17px;
+            padding-top: 0;
           }
           &__desc {
             font-size: 10px;
