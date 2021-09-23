@@ -1366,9 +1366,13 @@
   padding-right: 12px;
 }
 
-.form .select-style.normal .select .dropdown li {
+.form .select-style.normal .select .dropdown .option {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.form .select-style.normal .select .dropdown .option .radio {
+  display: none;
 }
 
 .form .button {
@@ -1396,6 +1400,8 @@
 }
 
 .form-box .select-style .select .dropdown {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   list-style: none;
 }
 
@@ -1410,7 +1416,7 @@
   width: 0;
   height: 0;
   border: 7px solid transparent;
-  border-color: #000 transparent transparent transparent;
+  border-color: #575757 transparent transparent transparent;
   position: absolute;
   top: 50%;
   right: 8px;
@@ -1423,13 +1429,33 @@
   overflow: hidden;
 }
 
-.form-box .select-style .select .dropdown li {
+.form-box .select-style .select .dropdown.active {
+  height: unset;
+  overflow: visible;
+  list-style: none;
+  max-height: 100px;
+  overflow: auto;
+  visibility: visible;
+}
+
+.form-box .select-style .select .dropdown .option {
   padding-top: 4px;
+  padding-left: 8px;
   font-size: 11px;
 }
 
-.form-box .select-style .select .dropdown li:not(:last-child) {
+.form-box .select-style .select .dropdown .option:not(:last-child) {
   padding-bottom: 4px;
+}
+
+.form-box .select-style .select .dropdown .option .radio {
+  display: none;
+}
+
+.form-box .select-style .select .dropdown .option label {
+  color: #000;
+  font-weight: normal;
+  font-size: 11px;
 }
 
 .form-box .select-style .select .selection {
@@ -1445,34 +1471,8 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-}
-
-.form-box .select-style .select .selection.active {
   border-radius: 11px;
   margin-bottom: 0;
-}
-
-.form-box .select-style .select .selection.active .dropdown,
-.form-box .select-style .select .selection.active + .dropdown,
-.form-box .select-style .select .selection.active ~ .dropdown {
-  height: unset;
-  overflow: visible;
-  list-style: none;
-  max-height: 100px;
-  overflow: auto;
-  visibility: visible;
-}
-
-.form-box .select-style .select .selection.active .dropdown li,
-.form-box .select-style .select .selection.active + .dropdown li,
-.form-box .select-style .select .selection.active ~ .dropdown li {
-  padding-left: 8px;
-}
-
-.form-box .select-style .select .selection.active .dropdown li:active,
-.form-box .select-style .select .selection.active + .dropdown li:active,
-.form-box .select-style .select .selection.active ~ .dropdown li:active {
-  background-color: #e6e6e6;
 }
 
 .form-box .section-main__menu {

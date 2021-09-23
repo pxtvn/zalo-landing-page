@@ -54,28 +54,56 @@ function checkRegisterButton() {
 }
 
 // custom select
-const select = document.querySelectorAll(".selection");
-const options = document.querySelectorAll(".option");
-const selectlabel = document.querySelector("#select-label");
-const selectlabel2 = document.querySelector("#select-label2");
+const selectedAll = document.querySelectorAll(".select-styled");
+console.log(selectedAll)
+selectedAll.forEach((selected) => {
+  const optionsContainer = selected.previousElementSibling;
+  // const searchBox = selected.nextElementSibling;
+  console.log(optionsContainer)
 
-select.forEach((activ) => {
-  activ.addEventListener("click", function (e) {
-    activ.classList.toggle("active");
+  const optionsList = optionsContainer.querySelectorAll(".option");
+
+  selected.addEventListener("click", () => {
+    if (optionsContainer.classList.contains("active")) {
+      optionsContainer.classList.remove("active");
+    } else {
+      let currentActive = document.querySelector(".options-container.active");
+
+      if (currentActive) {
+        currentActive.classList.remove("active");
+      }
+
+      optionsContainer.classList.add("active");
+    }
+
+    // searchBox.value = "";
+    // filterList("");
+
+    // if (optionsContainer.classList.contains("active")) {
+    //   searchBox.focus();
+    // }
   });
-});
 
-options.forEach(function (option) {
-  option.addEventListener("click", function (e) {
-    setSelectTitle(e);
+  optionsList.forEach((o) => {
+    o.addEventListener("click", () => {
+      selected.innerHTML = o.querySelector("label").innerHTML;
+      optionsContainer.classList.remove("active");
+    });
   });
+
+  // searchBox.addEventListener("keyup", function (e) {
+  //   filterList(e.target.value);
+  // });
+
+  // const filterList = (searchTerm) => {
+  //   searchTerm = searchTerm.toLowerCase();
+  //   optionsList.forEach((option) => {
+  //     let label = option.firstElementChild.nextElementSibling.innerText.toLowerCase();
+  //     if (label.indexOf(searchTerm) != -1) {
+  //       option.style.display = "block";
+  //     } else {
+  //       option.style.display = "none";
+  //     }
+  //   });
+  // };
 });
-
-function setSelectTitle(e) {
-  const label = document.querySelector(`li[value="${e.target.id}"]`).innerHTML;
-  selectlabel.innerHTML = label;
-  selectlabel2.innerHTML = label;
-  select.classList.remove("active");
-}
-
-
