@@ -669,7 +669,6 @@
 
 .section-news .card__image img {
   width: 100%;
-  max-height: unset;
   height: 243px;
 }
 
@@ -769,7 +768,7 @@
 
 .card__image img {
   width: 100%;
-  max-height: 127px;
+  min-height: 127px;
 }
 
 .card__section > *:not(:first-child) {
