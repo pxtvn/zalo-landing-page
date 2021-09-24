@@ -62,69 +62,97 @@ function findPos(obj) {
     return [curtop];
   }
 }
-let newValue = 0;
-window.addEventListener("scroll", (e) => {
-  var getHeightY = document.querySelector("#ss1");
-  var getHeightY2 = document.querySelector("#ss2");
-  var getHeightY3 = document.querySelector("#ss3");
-  var getHeightY4 = document.querySelector("#ss4");
-  var getHeightY5 = document.querySelector("#ss5");
-  var getHeightYFooter = document.getElementsByClassName("footer")[0];
+// let newValue = 0;
+if (window.innerWidth < 600) {
+  window.addEventListener("scroll", (e) => {
+    var getHeightY = document.querySelector("#ss1");
+    var getHeightY2 = document.querySelector("#ss2");
+    var getHeightY3 = document.querySelector("#ss3");
+    var getHeightY4 = document.querySelector("#ss4");
+    var getHeightY5 = document.querySelector("#ss5");
+    var getHeightYFooter = document.getElementsByClassName("footer")[0];
 
-  if (getHeightY) {
-    var sticky = getHeightY.offsetTop;
-  }
-  if (getHeightY2) {
-    var sticky2 = getHeightY2.offsetTop;
-  }
-  if (getHeightY3) {
-    var sticky3 = getHeightY3.offsetTop;
-  }
-  if (getHeightY4) {
-    var sticky4 = getHeightY4.offsetTop;
-  }
-  if (getHeightY5) {
-    var sticky5 = getHeightY5.offsetTop;
-  }
+    if (getHeightY) {
+      var sticky = getHeightY.offsetTop;
+    }
+    if (getHeightY2) {
+      var sticky2 = getHeightY2.offsetTop;
+    }
+    if (getHeightY3) {
+      var sticky3 = getHeightY3.offsetTop;
+    }
+    if (getHeightY4) {
+      var sticky4 = getHeightY4.offsetTop;
+    }
+    if (getHeightY5) {
+      var sticky5 = getHeightY5.offsetTop;
+    }
 
-  var stickyFooter = getHeightYFooter.offsetTop;
-  var a = document.getElementsByClassName("sticky-menu")[0];
+    var stickyFooter = getHeightYFooter.offsetTop;
+    var a = document.getElementsByClassName("sticky-menu")[0];
 
-  newValue = window.scrollY;
-  if (sticky) {
-    if (sticky < newValue + 170) {
-      a.classList.add("show");
-      document.getElementById("change-text").innerHTML = document.querySelector("#p1").textContent;
-    } else {
+    newValue = window.scrollY;
+    if (sticky) {
+      if (sticky < newValue + 170) {
+        a.classList.add("show");
+        document.getElementById("change-text").innerHTML =
+          document.querySelector("#p1").textContent;
+      } else {
+        a.classList.remove("show");
+      }
+    }
+
+    if (sticky2) {
+      if (sticky2 < newValue + 140) {
+        document.getElementById("change-text").innerHTML =
+          document.querySelector("#p2").textContent;
+      }
+    }
+
+    if (sticky3) {
+      if (sticky3 < newValue + 140) {
+        document.getElementById("change-text").innerHTML =
+          document.querySelector("#p3").textContent;
+      }
+    }
+    if (sticky4) {
+      if (sticky4 < newValue + 140) {
+        document.getElementById("change-text").innerHTML =
+          document.querySelector("#p4").textContent;
+      }
+    }
+
+    if (sticky5) {
+      if (sticky5 < newValue + 140) {
+        document.getElementById("change-text").innerHTML =
+          document.querySelector("#p5").textContent;
+      }
+    }
+
+    if (stickyFooter < newValue + 240) {
       a.classList.remove("show");
     }
-  }
+  });
+}
 
-  if (sticky2) {
-    if (sticky2 < newValue + 140) {
-      document.getElementById("change-text").innerHTML = document.querySelector("#p2").textContent;
-    }
-  }
-
-  if (sticky3) {
-    if (sticky3 < newValue + 140) {
-      document.getElementById("change-text").innerHTML = document.querySelector("#p3").textContent;
-    }
-  }
-  if (sticky4) {
-    if (sticky4 < newValue + 140) {
-      document.getElementById("change-text").innerHTML = document.querySelector("#p4").textContent;
-    }
-  }
-
-  if (sticky5) {
-    if (sticky5 < newValue + 140) {
-      document.getElementById("change-text").innerHTML =
-        document.querySelector("#p5").textContent;
-    }
-  }
-
-  if (stickyFooter < newValue + 240) {
-    a.classList.remove("show");
-  }
-});
+// fix scroll nav menu in desktop
+if (window.innerWidth > 601) {
+  const sections = document.querySelectorAll(".section");
+  const navLi = document.querySelectorAll("nav .container-nav ul li");
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 170) {
+        current = section.getAttribute("id");
+      }
+    });
+    console.log(current);
+    navLi.forEach((li) => {
+      li.classList.remove("active");
+      if (li.classList.contains(current)) {
+        li.classList.add("active");
+      }
+    });
+  });
+}
