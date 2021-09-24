@@ -34,7 +34,9 @@
         </div>
         <div class="menu-right">
           <button type="button" class="button">
-            <div class="text">Liên hệ</div>
+            <a href="inform.html">
+              <div class="text">Liên hệ</div>
+            </a>
           </button>
         </div>
       </div>
@@ -92,7 +94,14 @@
 
     <section class="section-main">
       <div class="section-main__box">
-        <div class="background-box"><img src="../assets/image/section/banner-template.png" alt="img"></div>
+        <div class="background-box">
+          <picture>
+            <source media="(min-width: 768px)"
+                srcset="">
+            <source media="(min-width: 320px)" srcset="../assets/image/section/banner-template.png">
+            <img src="../assets/image/section/banner-template.png" alt="img">
+          </picture>
+        </div>
         <h1 class="section__title main">
           Hướng dẫn kinh doanh
           <span class="highlights">TMĐT xuyên biên giới</span>          
@@ -100,7 +109,7 @@
       </div>
     </section>
 
-    <section class="section-news section-list-box section-list-group">
+    <section class="section section-news section-list-box section-list-group">
       <div class="section__list group-3">
         <div class="section__item">
           <div class="card">

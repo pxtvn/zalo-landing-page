@@ -36,7 +36,9 @@
         </div>
         <div class="menu-right">
           <button type="button" class="button">
-            <div class="text">Liên hệ</div>
+            <a href="inform.html">
+              <div class="text">Liên hệ</div>
+            </a>
           </button>
         </div>
       </div>
@@ -94,9 +96,16 @@
 
     <section class="section-main">
         <div class="section-main__box">
-          <div class="background-box"><img src="../assets/image/section/ptkd.png" alt="img"></div> 
+          <div class="background-box">
+            <picture>
+              <source media="(min-width: 768px)"
+                  srcset="">
+              <source media="(min-width: 320px)" srcset="../assets/image/section/ptkd.png">
+              <img src="../assets/image/section/ptkd.png" alt="img">
+            </picture>
+          </div> 
           <h1 class="section__title main">
-            <span class="highlights">Phát triển</span></br>
+            <span class="highlights">Phát triển</span>
             kinh doanh
           </h1>
         </div>
@@ -119,8 +128,21 @@
         </div>
     </section>
 
-    <section class="section-list-box" id="ss1">
+    <div class="container">
+      <!-- <nav style="position: sticky; top: 63px;">
+        <div class="container-nav">
+          <ul>
+            <li class="ss1 active">ss1</li>
+            <li class="ss2">ss2</li>
+            <li class="ss3">ss3</li>
+            <li class="ss4">ss4</li>
+            <li class="ss5">ss5</li>
+          </ul>
+        </div>
+      </nav> -->
+    <section class="section section-list-box" id="ss1" style="position: relative;">
       <h3 class="section__title title-custom">Tạo gian hàng <span class="highlights">Trực tuyến</span></h3>
+      
       <div class="section__list">
         <div class="section__item has-desc">
           <div class="section__box no-radius">
@@ -169,7 +191,7 @@
       </div>
     </section>
 
-    <section class="section-list-box" id="ss2">
+    <section class="section section-list-box" id="ss2">
       <h3 class="section__title title-custom">Hoàn thiện đơn hàng <span class="highlights">Bởi Amazon (FBA)</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -219,7 +241,7 @@
       </div>
     </section>
 
-    <section class="section-list-box" id="ss3">
+    <section class="section section-list-box" id="ss3">
       <h3 class="section__title title-custom">Xây dựng <span class="highlights">Thương hiệu</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -269,7 +291,7 @@
       </div>
     </section>
 
-    <section class="section-list-box" id="ss4">
+    <section class="section section-list-box" id="ss4">
       <h3 class="section__title title-custom">Quảng cáo & tiếp thị <span class="highlights">Trên Amazon</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -319,7 +341,7 @@
       </div>
     </section>
 
-    <section class="section-list-box" id="ss5">
+    <section class="section section-list-box" id="ss5">
       <h3 class="section__title title-custom">Nhà cung cấp <span class="highlights">Dịch vụ</span></h3>
       <div class="section__list">
         <div class="section__item has-desc">
@@ -368,6 +390,7 @@
           alt="see more"></a>
       </div>
     </section>
+  </div>
 
     <div class="footer">
       <div class="footer__introduce">
