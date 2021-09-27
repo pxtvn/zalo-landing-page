@@ -1147,26 +1147,12 @@
   background-color: #f2f2f2;
 }
 
-.wrapper-template .section-main__box {
-  padding-left: 35px;
-  padding-right: 144px;
-}
-
 .wrapper-template .section-main__box .section__title {
   color: #242d3c;
-  padding-top: 32px;
+  margin-top: -30px;
+  width: 65%;
   font-size: 22px;
   line-height: 27px;
-}
-
-@media screen and (min-width: 400px) {
-  .wrapper-template .section-main__box {
-    padding-right: 160px;
-  }
-  .wrapper-template .section-main__box .section__title {
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-  }
 }
 
 .wrapper-template .section-news.section-list-box {
