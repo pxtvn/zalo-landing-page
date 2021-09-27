@@ -360,3 +360,69 @@
     }
   }
 }
+
+.section-detail {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  .card {   
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+.card-detail {
+  .full-time {
+    font-size: 10px;
+    span {
+      color: #898989;
+      &:first-child {
+        &::after {
+          content: ",";
+        }
+      }
+      &:nth-child(2) {
+        &::after {
+          content: "";
+        }
+      }
+    }
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+  .card__desc {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .card__image {
+    margin-top: 19px;
+    position: relative;
+    padding-bottom: 200%;
+    display: block;
+    img {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  }
+  .card__social {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.section-related {
+  
+}
