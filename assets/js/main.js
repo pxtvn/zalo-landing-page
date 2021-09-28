@@ -166,17 +166,17 @@ good.addEventListener("click", (e) => {
   good.classList.toggle('active')
   if (good.classList.contains('active')) {
     showNoti.style.display = 'block'
+    bad.classList.remove('active')
   } else {
     showNoti.style.display = 'none'
-    bad.classList.remove('active')
   }
 })
 bad.addEventListener("click", (e) => {
   bad.classList.toggle('active')
   if (bad.classList.contains('active')) {
     showNoti.style.display = 'block'
+    good.classList.remove('active')
   } else {
     showNoti.style.display = 'none'
-    good.classList.remove('active')
   }
 })
