@@ -161,22 +161,22 @@ if (window.innerWidth > 601) {
 const good = document.getElementById('good')
 const bad = document.getElementById('bad')
 const showNoti = document.querySelector('.section-detail .notify')
-console.log(showNoti)
+
 good.addEventListener("click", (e) => {
-  showNoti.style.display = 'block'
+  good.classList.toggle('active')
   if (good.classList.contains('active')) {
-    return ;
+    showNoti.style.display = 'block'
   } else {
-    good.classList.add('active')
+    showNoti.style.display = 'none'
     bad.classList.remove('active')
   }
 })
 bad.addEventListener("click", (e) => {
-  showNoti.style.display = 'block'
+  bad.classList.toggle('active')
   if (bad.classList.contains('active')) {
-    return ;
+    showNoti.style.display = 'block'
   } else {
-    bad.classList.add('active')
+    showNoti.style.display = 'none'
     good.classList.remove('active')
   }
 })
