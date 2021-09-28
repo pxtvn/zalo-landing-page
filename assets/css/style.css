@@ -749,24 +749,20 @@
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
-  padding-bottom: 6px;
 }
 
 .card-detail .card__desc {
+  padding-top: 8px;
   font-size: 12px;
   line-height: 15px;
 }
 
 .card-detail .card__image {
   margin-top: 19px;
-  margin-bottom: 20px;
 }
 
 .card-detail .card__image img {
   display: block;
-  width: unset;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .card-detail .card__image .img-note {
@@ -779,7 +775,7 @@
 }
 
 .card-detail .card__social {
-  padding-top: 30px;
+  padding-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,11 +797,8 @@
 }
 
 .card-detail .card__social-right span {
-  font-style: normal;
-  font-weight: normal;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   font-size: 10px;
-  line-height: 12px;
 }
 
 .card-detail .card__social-right .social__rate {
