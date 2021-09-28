@@ -50,10 +50,10 @@
         max-height: 28px;
         margin-left: 14px;
         margin-bottom: 1px;
-          img {
-            width: 100%;
-            height: auto;
-          }
+        img {
+          width: 100%;
+          height: auto;
+        }
         & + .text {
           padding-left: 16px;
           justify-content: flex-start;
@@ -364,7 +364,7 @@
 .section-detail {
   padding-top: 40px;
   padding-bottom: 45px;
-  .card {   
+  .card {
     padding-left: 26px;
     padding-right: 26px;
   }
@@ -399,16 +399,20 @@
   }
   .card__image {
     margin-top: 19px;
-    position: relative;
-    padding-bottom: 200%;
-    display: block;
+    margin-bottom: 20px;
     img {
-      width: 100%;
-      position: absolute;
-      height: 100%;
-      top: 0;
-      left: 0;
       display: block;
+      width: unset;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .img-note {
+      display: block;
+      margin-top: 8px;
+      text-align: center;
+      font-size: 10px;
+      font-weight: lighter;
+      font-style: italic;
     }
   }
   .card__social {
@@ -419,10 +423,49 @@
     &-right {
       display: flex;
       align-items: center;
+      span {
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 1px;
+        font-size: 10px;
+        line-height: 12px;
+      }
+      .social__rate {
+        margin-left: 5px;
+        img {
+          width: 20px;
+        }
+        &.active {
+          filter: invert(20%) sepia(21%) saturate(3498%) hue-rotate(180deg) brightness(95%) contrast(93%);
+        }
+      }
     }
   }
 }
 
 .section-related {
-  
+  background-color: #f0f0f0;
+  padding: 24px 26px;
+  .section__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+  .section__links {
+    padding-left: 16px;
+    .section__item {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #12416b;
+      &:not(:last-child) {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #c4c4c4;
+      }
+    }
+  }
 }
