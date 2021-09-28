@@ -156,3 +156,27 @@ if (window.innerWidth > 601) {
     });
   });
 }
+
+// #click to rate 
+const good = document.getElementById('good')
+const bad = document.getElementById('bad')
+const showNoti = document.querySelector('.section-detail .notify')
+console.log(showNoti)
+good.addEventListener("click", (e) => {
+  showNoti.style.display = 'block'
+  if (good.classList.contains('active')) {
+    return ;
+  } else {
+    good.classList.add('active')
+    bad.classList.remove('active')
+  }
+})
+bad.addEventListener("click", (e) => {
+  showNoti.style.display = 'block'
+  if (bad.classList.contains('active')) {
+    return ;
+  } else {
+    bad.classList.add('active')
+    good.classList.remove('active')
+  }
+})
