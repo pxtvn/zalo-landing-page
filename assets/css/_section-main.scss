@@ -407,7 +407,7 @@
     p {
       font-size: 12px;
       line-height: 15px;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       font-weight: lighter;
       color: #000000;
     }
@@ -428,7 +428,7 @@
     }
     h2,h3,h4 {
       font-weight: bold;
-      padding-bottom: 6px;
+      margin-bottom: 4px;
     }
     h2 {
       font-size: 20px;
@@ -447,9 +447,12 @@
     margin-top: 19px;
     img {
       display: block;
+      margin: 0 auto;
+      width: unset;
+      height: unset;
+      max-width: 100%;
     }
     figcaption {
-      display: block;
       margin-top: 8px;
       text-align: center;
       font-size: 10px;
