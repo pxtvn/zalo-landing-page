@@ -391,9 +391,9 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: bold;
-    padding-bottom: 6px;
   }
   .card__desc {
+    padding-top: 8px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -439,12 +439,8 @@
   }
   .card__image {
     margin-top: 19px;
-    margin-bottom: 20px;
     img {
       display: block;
-      width: unset;
-      max-width: 100%;
-      margin: 0 auto;
     }
     figcaption {
       display: block;
@@ -456,7 +452,7 @@
     }
   }
   .card__social {
-    padding-top: 30px;
+    padding-top: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -464,11 +460,8 @@
       display: flex;
       align-items: center;
       span {
-        font-style: normal;
-        font-weight: normal;
-        margin-bottom: 1px;
+        margin-bottom: 2px;
         font-size: 10px;
-        line-height: 12px;
       }
       .social__rate {
         margin-left: 5px;
