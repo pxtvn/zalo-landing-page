@@ -426,7 +426,9 @@
         color: #000000;
       }
     }
-    h2,h3,h4 {
+    h2,
+    h3,
+    h4 {
       font-weight: bold;
       margin-bottom: 4px;
     }
@@ -479,8 +481,12 @@
           width: 20px;
         }
         &.active {
-          filter: invert(20%) sepia(21%) saturate(3498%) hue-rotate(180deg)
-            brightness(95%) contrast(93%);
+          filter: invert(35%) sepia(25%) saturate(3513%) hue-rotate(185deg)
+            brightness(55%) contrast(100%) drop-shadow(0 0  2px rgba(142, 176, 226, 0.9));
+          &.bad {
+            filter: invert(56%) sepia(79%) saturate(474%) hue-rotate(350deg)
+              brightness(95%) contrast(101%) drop-shadow(0 0  2px rgba(255, 148, 48, 0.9));
+          }
         }
       }
     }
