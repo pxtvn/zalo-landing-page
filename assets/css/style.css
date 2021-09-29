@@ -355,8 +355,7 @@
 
 .section-main__menu .button-menu .box {
   width: 28px;
-  max-height: 28px;
-  margin-left: 14px;
+  margin-left: 3px;
   margin-bottom: 1px;
 }
 
@@ -1621,7 +1620,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 56px;
+  min-height: 56px;
+  height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1633,7 +1633,7 @@
 
 .form-box .section-main__menu .button-menu .box {
   min-width: 50px;
-  height: 100%;
+  height: 50px;
   background: linear-gradient(315.38deg, #e6e6e6 14.63%, #f2f2f2 85.36%);
   border-radius: 48px;
   display: -webkit-box;
@@ -1649,8 +1649,8 @@
 .form-box .section-main__menu .button-menu .box img {
   padding: 0;
   margin: auto;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 }
 
 .form-box .section-main__menu .button-menu .text {
