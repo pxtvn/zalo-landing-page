@@ -355,6 +355,7 @@
 
 .section-main__menu .button-menu .box {
   width: 28px;
+  margin: unset;
   margin-left: 3px;
   margin-bottom: 1px;
 }
