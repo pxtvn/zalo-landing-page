@@ -1206,6 +1206,26 @@
   margin-bottom: 0;
 }
 
+.wrapper-home .card {
+  padding: unset;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 40px;
+}
+
+.wrapper-home .card__section {
+  margin-bottom: 20px;
+}
+
+.wrapper-home .card .section__list {
+  padding: unset;
+}
+
+.wrapper-home .card:not(:last-child) {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #12416b;
+}
+
 .wrapper-ptkd .section-main__box {
   margin-bottom: 25px;
 }
@@ -1230,7 +1250,8 @@
   color: #12416b;
 }
 
-.wrapper-tmdtxbg .section-main .section__title, .wrapper-ttnph .section-main .section__title {
+.wrapper-tmdtxbg .section-main .section__title,
+.wrapper-ttnph .section-main .section__title {
   top: 82px;
 }
 

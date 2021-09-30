@@ -31,6 +31,22 @@
       margin-bottom: 0;
     }
   }
+  .card {
+    padding: unset;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 40px;
+    &__section {
+      margin-bottom: 20px;
+    }
+    .section__list {
+      padding: unset;
+    }
+    &:not(:last-child) {
+      padding-bottom: 40px;
+      border-bottom: 1px solid #12416b;
+    }
+  }
 }
 
 .wrapper-ptkd {
@@ -47,7 +63,7 @@
       }
     }
   }
-  
+
   @media screen and (max-width: 360px) {
     .section-main {
       &__box {
@@ -69,7 +85,8 @@
   }
 }
 
-.wrapper-tmdtxbg, .wrapper-ttnph {
+.wrapper-tmdtxbg,
+.wrapper-ttnph {
   .section-main {
     .section__title {
       top: 82px;
@@ -107,7 +124,7 @@
   padding: 0 35px 10px 35px;
   background: url("../image/section/section-inform.png");
   background-size: contain;
-  .box{
+  .box {
     max-width: 620px;
     margin: auto;
   }
