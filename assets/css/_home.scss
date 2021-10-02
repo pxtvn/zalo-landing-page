@@ -275,10 +275,118 @@
     .section-list-box {
       margin-left: auto;
       margin-right: auto;
+      .section__title {
+        margin-bottom: 50px;
+      }
       .section__list {
         padding: 0;
+        margin-right: -20px;
+        margin-left: -20px;
+        .section__item {
+          margin: unset;
+          .section__box {
+            margin-bottom: 16px;
+          }
+          .section__info {
+            align-items: unset;
+            .title {
+              img {
+                max-width: unset;
+                min-width: unset;
+                max-height: unset;
+                width: 46px;
+                height: 46px;
+              }
+              h4 {
+                padding-left: 16px;
+              }
+            }
+
+            .see-more {
+              margin-left: 62px;
+            }
+          }
+        }
       }
     }
+
+    .section-list-group {
+      max-width: unset;
+      .section__list {
+        justify-content: space-around;
+        max-width: 980px;
+        margin: unset;
+        margin: auto;
+        .section__item {
+          width: 228px;
+          min-height: 228px;
+          .section__box {
+            max-width: unset;
+            height: 75px;
+            width: 75px;
+          }
+          .section__info {
+            align-items: center;
+            .title {
+              padding: unset;
+              margin-top: -8px;
+              margin-bottom: 16px;
+            }
+            .see-more {
+              margin: unset;
+            }
+          }
+          &:not(:last-child) {
+            margin-bottom: unset;
+          }
+        }
+      }
+    }
+
+    #ss3 {
+      .section__list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .section__item {
+          width: 280px;
+          margin-bottom: 57px;
+          .section__box {
+            min-width: unset;
+            max-height: unset;
+            margin: unset;
+            width: 100%;
+            height: 148px;
+          }
+          .section__info {
+            padding: 20px 24px 14px;
+            min-height: 112px;
+            .title {
+              display: inline;
+              text-align: center;
+              h4 {
+                padding: unset;
+                margin-bottom: 8px;
+                font-size: 20px;
+                line-height: 24px;
+              }
+            }
+            .see-more {
+              margin: unset;
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+
+    .section-news {
+      max-width: unset;
+      .card {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }    
   }
 
   .wrapper-ptkd {

@@ -1013,6 +1013,7 @@
     margin: auto;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 50px;
   }
   .section-why .section__title {
     font-size: 30px;
@@ -1810,8 +1811,117 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
+  .wrapper-home .section-list-box .section__title {
+    margin-bottom: 50px;
+  }
   .wrapper-home .section-list-box .section__list {
     padding: 0;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .wrapper-home .section-list-box .section__list .section__item {
+    margin: unset;
+  }
+  .wrapper-home .section-list-box .section__list .section__item .section__box {
+    margin-bottom: 16px;
+  }
+  .wrapper-home .section-list-box .section__list .section__item .section__info {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .wrapper-home .section-list-box .section__list .section__item .section__info .title img {
+    max-width: unset;
+    min-width: unset;
+    max-height: unset;
+    width: 46px;
+    height: 46px;
+  }
+  .wrapper-home .section-list-box .section__list .section__item .section__info .title h4 {
+    padding-left: 16px;
+  }
+  .wrapper-home .section-list-box .section__list .section__item .section__info .see-more {
+    margin-left: 62px;
+  }
+  .wrapper-home .section-list-group {
+    max-width: unset;
+  }
+  .wrapper-home .section-list-group .section__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 980px;
+    margin: unset;
+    margin: auto;
+  }
+  .wrapper-home .section-list-group .section__list .section__item {
+    width: 228px;
+    min-height: 228px;
+  }
+  .wrapper-home .section-list-group .section__list .section__item .section__box {
+    max-width: unset;
+    height: 75px;
+    width: 75px;
+  }
+  .wrapper-home .section-list-group .section__list .section__item .section__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper-home .section-list-group .section__list .section__item .section__info .title {
+    padding: unset;
+    margin-top: -8px;
+    margin-bottom: 16px;
+  }
+  .wrapper-home .section-list-group .section__list .section__item .section__info .see-more {
+    margin: unset;
+  }
+  .wrapper-home .section-list-group .section__list .section__item:not(:last-child) {
+    margin-bottom: unset;
+  }
+  .wrapper-home #ss3 .section__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .wrapper-home #ss3 .section__list .section__item {
+    width: 280px;
+    margin-bottom: 57px;
+  }
+  .wrapper-home #ss3 .section__list .section__item .section__box {
+    min-width: unset;
+    max-height: unset;
+    margin: unset;
+    width: 100%;
+    height: 148px;
+  }
+  .wrapper-home #ss3 .section__list .section__item .section__info {
+    padding: 20px 24px 14px;
+    min-height: 112px;
+  }
+  .wrapper-home #ss3 .section__list .section__item .section__info .title {
+    display: inline;
+    text-align: center;
+  }
+  .wrapper-home #ss3 .section__list .section__item .section__info .title h4 {
+    padding: unset;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .wrapper-home #ss3 .section__list .section__item .section__info .see-more {
+    margin: unset;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .wrapper-home .section-news {
+    max-width: unset;
+  }
+  .wrapper-home .section-news .card {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .wrapper-ptkd .section-main .section__title {
     margin: unset;
