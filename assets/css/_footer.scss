@@ -69,4 +69,43 @@
       }
     }
   }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 59px;
+    padding-bottom: 0;
+    &-box {
+      margin: auto;
+      display: flex;
+      max-width: 980px;
+      & > * {
+        margin-left: 45px;
+        margin-right: 45px;
+      }
+      & > *:first-child {
+        margin-left: 0;
+      }
+      & > *:last-child {
+        margin-right: 0;
+      }
+    }
+    &__introduce {
+      max-width: 247px;
+      .footer-title {
+        text-align: left;
+        font-size: 15px;
+      }
+      &-content {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    &__contact {
+      &-menu {
+        margin-top: 20px;
+        a{
+          min-width: 220px;
+        }
+      }
+    }
+  }
 }

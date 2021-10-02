@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector(".menu-btn");
 const content = document.querySelector(".menu-content");
 let menuOpen = false;
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", (e) => {
   if (!menuOpen) {
     menuBtn.classList.add("open");
     content.classList.add("show");
@@ -13,13 +13,33 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+//chheck width body header
+if (window.innerWidth > 1024) {
+  const header = document.querySelector(".accordion__header");
+  const body = document.querySelector(".accordion__body");
+  window.addEventListener("load", () => {
+    if (header.offsetWidth > body.offsetWidth) {
+      body.style.width = "100%";
+    }
+  });
+}
 // collapse
 const accordion = document.querySelectorAll(".button-collapse");
-accordion.forEach((accor) => {
-  accor.addEventListener("click", () => {
-    accor.classList.toggle("active");
+// accordion.forEach((accor) => {
+//   accor.addEventListener("click", (e) => {
+//     accor.classList.toggle("active");
+//   });
+// });
+// var header = document.getElementById("myDIV");
+for (var i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function(e) {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    
+    this.className += " active";
   });
-});
+}
+
 // line  string
 // window.addEventListener("load", (event) => {
 //   var el = document.querySelectorAll(".highlights");
@@ -143,11 +163,11 @@ if (window.innerWidth > 601) {
     let current = "";
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
-      if (pageYOffset >= sectionTop - 170) {
+      if (pageYOffset >= sectionTop - 140) {
         current = section.getAttribute("id");
       }
     });
-    console.log(current);
+    
     navLi.forEach((li) => {
       li.classList.remove("active");
       if (li.classList.contains(current)) {
@@ -186,37 +206,39 @@ if (bad) {
 }
 
 // inform check step
-const prevStep = document.getElementById("prev-step");
-const nextStep = document.getElementById("next-step");
-if (prevStep) {
-  prevStep.addEventListener("click", function (e) {
-    var getStep1 = document.getElementsByClassName("step-1")[0];
-    var getStep2 = document.getElementsByClassName("step-2")[0];
-    var getPrevBtn = document.getElementsByClassName("prev-button")[0];
-    var pagi = document.getElementsByClassName("pagination-circle")[0];
-    var pagi2 = document.getElementsByClassName("pagination-circle")[1];
-    pagi2.classList.remove("active");
-    pagi.classList.add("active");
-    getStep2.classList.add("hide");
-    getPrevBtn.classList.add("disabled");
-    getStep1.classList.remove("hide");
-    console.log("click");
-  });
-}
-
-if (nextStep) {
-  nextStep.addEventListener("click", function (e) {
-    var getStep1 = document.getElementsByClassName("step-1")[0];
-    var getStep2 = document.getElementsByClassName("step-2")[0];
-    var getPrevBtn = document.getElementsByClassName("prev-button")[0];
-    var pagi = document.getElementsByClassName("pagination-circle")[0];
-    var pagi2 = document.getElementsByClassName("pagination-circle")[1];
-    getStep1.classList.add("hide");
-    pagi.classList.remove("active");
-    pagi2.classList.add("active");
-    getPrevBtn.classList.remove("disabled");
-    getStep2.classList.remove("hide");
-  });
+if (window.innerWidth < 600) {
+  const prevStep = document.getElementById("prev-step");
+  const nextStep = document.getElementById("next-step");
+  if (prevStep) {
+    prevStep.addEventListener("click", function (e) {
+      var getStep1 = document.getElementsByClassName("step-1")[0];
+      var getStep2 = document.getElementsByClassName("step-2")[0];
+      var getPrevBtn = document.getElementsByClassName("prev-button")[0];
+      var pagi = document.getElementsByClassName("pagination-circle")[0];
+      var pagi2 = document.getElementsByClassName("pagination-circle")[1];
+      pagi2.classList.remove("active");
+      pagi.classList.add("active");
+      getStep2.classList.add("hide");
+      getPrevBtn.classList.add("disabled");
+      getStep1.classList.remove("hide");
+      console.log("click");
+    });
+  }
+  
+  if (nextStep) {
+    nextStep.addEventListener("click", function (e) {
+      var getStep1 = document.getElementsByClassName("step-1")[0];
+      var getStep2 = document.getElementsByClassName("step-2")[0];
+      var getPrevBtn = document.getElementsByClassName("prev-button")[0];
+      var pagi = document.getElementsByClassName("pagination-circle")[0];
+      var pagi2 = document.getElementsByClassName("pagination-circle")[1];
+      getStep1.classList.add("hide");
+      pagi.classList.remove("active");
+      pagi2.classList.add("active");
+      getPrevBtn.classList.remove("disabled");
+      getStep2.classList.remove("hide");
+    });
+  }
 }
 // active button form
 var list = document.querySelectorAll(".button-choose");
@@ -286,21 +308,21 @@ selectedAll.forEach((selected) => {
 
 //show modal
 const popup = document.querySelector("#popup1");
-const hide = document.querySelector('#popup1 .close')
-const show = document.querySelector('#show-popup')
+const hide = document.querySelector("#popup1 .close");
+const show = document.querySelector("#show-popup");
 
-if(show) {
-  show.addEventListener('click', () => {
-    popup.classList.add('show')
-    if(popup.classList.contains('show')) {
-      document.body.style.overflow = 'hidden'
+if (show) {
+  show.addEventListener("click", () => {
+    popup.classList.add("show");
+    if (popup.classList.contains("show")) {
+      document.body.style.overflow = "hidden";
     }
-  })
+  });
 }
 
-if(hide) {
-  hide.addEventListener('click', () => {
-    popup.classList.remove('show')
-    document.body.style.overflow = 'auto'
-  })
+if (hide) {
+  hide.addEventListener("click", () => {
+    popup.classList.remove("show");
+    document.body.style.overflow = "auto";
+  });
 }

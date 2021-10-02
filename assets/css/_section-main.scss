@@ -38,7 +38,7 @@
       width: 100%;
       background: #303d4f;
       border-radius: 43px;
-      padding: 3px 6px 3px 6px;
+      padding: 4px 10px 4px 10px;
       height: 39px;
       display: flex;
       align-items: center;
@@ -234,18 +234,18 @@
 
 .section-news {
   padding: 65px 0 65px 0;
+  .title {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    padding-bottom: 14px;
+    color: #000000;
+  }
   .card {
     padding-left: 35px;
     padding-right: 35px;
     &:not(:last-child) {
       margin-bottom: 40px;
-    }
-    .title {
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 16px;
-      padding-bottom: 14px;
-      color: #000000;
     }
     &__image {
       z-index: 1;
@@ -290,6 +290,7 @@
           position: absolute;
           bottom: 0;
           left: 0;
+          width: 100%;
           &::before {
             content: "";
             --color-start: rgba(196, 196, 196, 0);
@@ -482,10 +483,12 @@
         }
         &.active {
           filter: invert(35%) sepia(25%) saturate(3513%) hue-rotate(185deg)
-            brightness(55%) contrast(100%) drop-shadow(0 0  2px rgba(142, 176, 226, 0.9));
+            brightness(55%) contrast(100%)
+            drop-shadow(0 0 2px rgba(142, 176, 226, 0.9));
           &.bad {
             filter: invert(56%) sepia(79%) saturate(474%) hue-rotate(350deg)
-              brightness(95%) contrast(101%) drop-shadow(0 0  2px rgba(255, 148, 48, 0.9));
+              brightness(95%) contrast(101%)
+              drop-shadow(0 0 2px rgba(255, 148, 48, 0.9));
           }
         }
       }
@@ -515,6 +518,111 @@
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #c4c4c4;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-main {
+    &__menu {
+      display: flex;
+      justify-content: center;
+      max-width: 1028px;
+      margin: auto;
+      padding: 0;
+      flex-flow: row wrap;
+      width: 100%;
+
+      .button-menu {
+        width: calc((100% / 3) - 48px);
+        margin: 24px;
+        padding-left: 12px;
+        padding-right: 15px;
+        .text {
+          font-size: 12px;
+        }
+        .box {
+          margin-left: 6px;
+        }
+      }
+    }
+    &-box {
+      margin-bottom: 0;
+    }
+    .section__title {
+      max-width: 980px;
+      margin: auto;
+      padding: 0;
+      text-align: left;
+      font-size: 50px;
+      line-height: 61px;
+      .highlights {
+        display: block;
+      }
+    }
+  }
+
+  .section-why {
+    max-width: 980px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    .section__title {
+      font-size: 30px;
+      line-height: 37px;
+      text-align: center;
+      padding-bottom: 17px;
+    }
+    & > .text {
+      font-size: 15px;
+      padding-bottom: 17px;
+      line-height: 18px;
+    }
+    .benefit {
+      display: flex;
+      .item {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc((100% / 3));
+        padding: 18px 22px 16px 16px;
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        .info {
+          .text {
+            padding-bottom: 0;
+            font-size: 13px;
+            line-height: 15px;
+          }
+          .title {
+            font-size: 15px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-news {
+    .card {
+      &.column {
+        .card__section {
+          .card__info {
+            &::before {
+              height: 240%;
+            }
+          }
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 0;
       }
     }
   }

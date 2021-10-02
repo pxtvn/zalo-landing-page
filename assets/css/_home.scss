@@ -161,15 +161,14 @@
   }
 
   .menu {
-    background-color: unset;
-    position: relative;
     &-left {
       display: flex;
       justify-content: center;
       width: 100%;
     }
     &-wrap {
-      padding-top: 0;
+      background-color: unset;
+      position: relative;
     }
   }
   .section__title {
@@ -249,6 +248,103 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper-home {
+    .section-main {
+      .section__title {
+        text-align: left;
+        font-size: 45px;
+      }
+      .section-main__menu {
+        justify-content: space-between;
+        max-width: 980px;
+        top: 470px;
+        .button-menu {
+          max-width: 260px;
+          min-width: 180px;
+          width: unset;
+          margin: unset;
+        }
+      }
+    }
+    
+    .section-list-box {
+      margin-left: auto;
+      margin-right: auto;
+      .section__list {
+        padding: 0;
+      }
+    }
+  }
+
+  .wrapper-ptkd {
+    .section-main {
+      .section__title {
+        margin: unset;
+        max-width: 45%;
+        padding-left: 17%;
+        font-size: 50px;
+        line-height: 61px;
+      }
+    }
+  }
+  .wrapper-ptkd, .wrapper-ttnph, .wrapper-tmdtxbg {
+    .section-main {
+      &__box {
+        margin-bottom: 0;
+        .background-box {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .wrapper-tmdtxbg, .wrapper-ttnph {
+    .section-main {
+      .section__title {
+        font-size: 50px;
+        padding-top: 85px;
+        line-height: 61px;
+        span {
+          display: block;
+          max-width: 425px;
+        }
+      }
+    }
+  }
+
+  .wrapper-news {
+    .section-main {
+      .section__title {
+        font-size: 60px;
+        padding-top: 97px;
+        line-height: 73px;
+      }
+    }
+    .section-list-box {
+      // &:first-child {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        .section-container {
+          background: #EBEBEB;
+          padding-top: 38px;
+          padding-bottom: 38px;
+        }
+        .custom, & > .section__list, .title {
+          max-width: 980px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .title {
+          font-size: 25px;
+          padding-bottom: 20px;
+        }
+      // }
     }
   }
 }

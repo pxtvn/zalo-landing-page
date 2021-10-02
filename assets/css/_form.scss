@@ -4,7 +4,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    color: #ffffff;
+    color: #F5911E;
     margin-bottom: 21px;
   }
 
@@ -93,11 +93,14 @@
   }
   .button {
     border-radius: 40px;
-    padding: 6px 29px 6px 29px;
+    padding: 12px 29px 12px 29px;
     background: #f5911e;
     border: none;
     margin-top: 6px;
     width: 100%;
+    max-width: 208px;
+    display: block;
+    margin: auto;
     .text {
       font-weight: bold;
       font-size: 12px;
@@ -188,6 +191,7 @@
         padding: 3px;
         background-color: #e2e2e2;
         box-shadow: inset 0px 2px 7px rgba(0, 0, 0, 0.35);
+        max-width: 380px;
         .box {
           min-width: 50px;
           height: 50px;
@@ -263,8 +267,31 @@
       }
     }
   }
-  &.hide {
-    display: none;
+
+  &.step-1 {
+    .button {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &.hide {
+      display: none;
+    }
+    .title {
+      color: #ffffff;
+    }
+
+    .button { 
+      max-width: 100%;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    &.step-1 {
+      .button {
+        display: block;
+      }
+    }
   }
 }
 

@@ -66,10 +66,15 @@ body {
 }
 a {
   color: inherit;
+  cursor: pointer;
   text-decoration: unset;
 }
 .button {
   border: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
 }
 html {
   scroll-behavior: smooth;
@@ -112,10 +117,10 @@ html {
     width: 100%;
     position: fixed;
     top: -60px;
-    z-index: 9999;
+    z-index: 999;
     transition: all 0.35s ease;
     &.show {
-      top: 63px;
+      top: 60px;
     }
   }
   .button {
@@ -132,17 +137,6 @@ html {
       font-size: 12px;
       line-height: 15px;
       color: #12416b;
-    }
-  }
-}
-
-.container-nav {
-  li {
-    font-size: 20px;
-    color: #000;
-    transition: all 0.4s ease;
-    &.active {
-      background-color: red;
     }
   }
 }
