@@ -25,20 +25,21 @@ if (window.innerWidth > 1024) {
 }
 // collapse
 const accordion = document.querySelectorAll(".button-collapse");
-// accordion.forEach((accor) => {
-//   accor.addEventListener("click", (e) => {
-//     accor.classList.toggle("active");
-//   });
-// });
-// var header = document.getElementById("myDIV");
-for (var i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener("click", function(e) {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    
-    this.className += " active";
+accordion.forEach((accor) => {
+  accor.addEventListener("click", (e) => {
+    accor.classList.toggle("active");
   });
-}
+});
+// var header = document.getElementById("myDIV");
+
+// for (var i = 0; i < accordion.length; i++) {
+//   accordion[i].addEventListener("click", function(e) {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+    
+//     this.className += " active";
+//   });
+// }
 
 // line  string
 // window.addEventListener("load", (event) => {
