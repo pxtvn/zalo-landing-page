@@ -252,6 +252,12 @@
   }
 }
 
+.wrapper-detail {
+  .section-detail {
+    padding-top: 100px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .wrapper-home {
     .section-main {
@@ -441,10 +447,8 @@
               flex-direction: row;
               align-items: center;
               .section__box {
-                max-width: unset;
-                max-height: unset;
-                width: 124px;
-                height: 124px;
+                max-width: 124px;
+                max-height: 124px;
                 margin-bottom: unset;
                 img {
                   width: inherit;
@@ -540,6 +544,25 @@
           padding-bottom: 20px;
         }
       // }
+    }
+  }
+
+  .wrapper-inform {
+    background: url("../image/section/dekstop-consentform.png") no-repeat;
+    background-size: cover;
+  }
+
+  .wrapper-template {
+    .section-list-box {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1016px;
+      .section__list {
+        .section__item {
+          margin: 18px;
+          width: calc((100% / 3) - 36px);
+        }
+      }
     }
   }
 }

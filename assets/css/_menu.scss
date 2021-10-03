@@ -97,7 +97,7 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    & + *:not(.section__title) {
+    & + *:not(.section__title):not(.section-detail) {
       padding-top: 60px;
     }
   }

@@ -309,12 +309,20 @@ selectedAll.forEach((selected) => {
 //show modal
 const popup = document.querySelector("#popup1");
 const hide = document.querySelector("#popup1 .close");
-const show = document.querySelector("#show-popup");
+const show = document.querySelector(".phone");
+const overlay = document.querySelector('.overlay')
+const notifyPopup = document.querySelector("#popup-notify");
+const hideNotify = document.querySelector('#popup-notify .close')
 
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    notifyPopup.classList.add('show')
+  },5000)
+})
 if (show) {
   show.addEventListener("click", () => {
     popup.classList.add("show");
-    if (popup.classList.contains("show")) {
+    if (overlay.classList.contains("show")) {
       document.body.style.overflow = "hidden";
     }
   });
@@ -323,6 +331,13 @@ if (show) {
 if (hide) {
   hide.addEventListener("click", () => {
     popup.classList.remove("show");
+    document.body.style.overflow = "auto";
+  });
+}
+
+if (hideNotify) {
+  hideNotify.addEventListener("click", () => {
+    notifyPopup.classList.remove("show");
     document.body.style.overflow = "auto";
   });
 }
