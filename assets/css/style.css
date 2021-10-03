@@ -1821,6 +1821,9 @@ nav {
   .wrapper-ptkd .section-main .section__title .highlights {
     display: block;
   }
+  .wrapper-template .section-main .section__title .highlights {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -2096,9 +2099,13 @@ nav {
     line-height: 73px;
   }
   .wrapper-news .section-list-box {
+    border: unset;
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+  .wrapper-news .section-list-box:not(:last-child) > .section__list {
+    border-bottom: 1px solid #12416B;
   }
   .wrapper-news .section-list-box .section-container {
     background: #EBEBEB;
@@ -2229,6 +2236,10 @@ nav {
   .wrapper-inform {
     background: url("../image/section/dekstop-consentform.png") no-repeat;
     background-size: cover;
+  }
+  .wrapper-template .section-main .section__title {
+    font-size: 40px;
+    line-height: 49px;
   }
   .wrapper-template .section-list-box {
     margin-left: auto;
