@@ -262,6 +262,9 @@ nav {
       }
       &.title-custom {
         margin-left: 0;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 60px;
       }
     }
     .section__list {
@@ -277,6 +280,29 @@ nav {
         }
         &:first-child {
           margin-left: 0;
+        }
+        &.has-desc {
+          .section__box {
+            max-width: 184px;
+            max-height: 184px;
+          }
+          .section__info {
+            padding-left: 8px;
+            padding-right: 8px;
+            .title {
+              h4 {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+              }
+            }
+            .content {
+              font-size: 15px;
+              line-height: 18px;
+            }
+          }
         }
         .section__box {
           max-width: 300px;
@@ -344,6 +370,7 @@ nav {
   }
   .container {
     max-width: 980px;
+    padding-bottom: 60px;
     margin: auto;
     .section-list-box {
       margin-left: 261px;
