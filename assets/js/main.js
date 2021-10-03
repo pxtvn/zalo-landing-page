@@ -312,7 +312,7 @@ const hide = document.querySelector("#popup1 .close");
 const show = document.querySelector(".phone");
 const overlay = document.querySelector('.overlay')
 const notifyPopup = document.querySelector("#popup-notify");
-const hideNotify = document.querySelector('#popup-notify .close')
+const notifyPopupNoti = document.querySelector("#popup-notify .popup-notify");
 
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -335,9 +335,9 @@ if (hide) {
   });
 }
 
-if (hideNotify) {
-  hideNotify.addEventListener("click", () => {
+window.onclick = (e) => {
+  if(e.target == notifyPopupNoti) {
     notifyPopup.classList.remove("show");
     document.body.style.overflow = "auto";
-  });
+  }
 }
