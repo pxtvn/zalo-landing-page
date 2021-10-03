@@ -2056,10 +2056,122 @@ nav {
     padding-top: 38px;
     padding-bottom: 38px;
   }
+  .wrapper-news .section-list-box .section-container .custom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapper-news .section-list-box .section-container .custom .card {
+    height: 625px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .card .card__section .card__info {
+    padding: 0 120px 36px 44px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .card .card__section .card__info .card__title {
+    font-size: 35px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .card .card__section .card__info .full-time {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .card .card__section .card__info::before {
+    height: 140%;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list {
+    margin: unset;
+    padding-bottom: unset;
+    padding-top: 24px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 18px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item .section__box {
+    max-width: 280px;
+    max-height: 208px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item .section__info {
+    padding-left: unset;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item .section__info .title {
+    padding-bottom: 6px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item .section__info .title h4 {
+    margin-top: 12px;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item .section__info .content {
+    padding-right: 50px;
+    overflow: hidden;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item .section__info .content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .wrapper-news .section-list-box .section-container .custom .section__list .section__item .section__info .content .full-time {
+    display: none;
+  }
   .wrapper-news .section-list-box .custom, .wrapper-news .section-list-box > .section__list, .wrapper-news .section-list-box .title {
     max-width: 980px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .wrapper-news .section-list-box .section__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 24px;
+  }
+  .wrapper-news .section-list-box .section__list .section__item {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: unset;
+  }
+  .wrapper-news .section-list-box .section__list .section__item .section__box {
+    max-height: 182px;
+    max-width: 248px;
+  }
+  .wrapper-news .section-list-box .section__list .section__item .section__info {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    padding-left: 30px;
+  }
+  .wrapper-news .section-list-box .section__list .section__item .section__info .title {
+    margin: unset;
+    padding-bottom: 18px;
+  }
+  .wrapper-news .section-list-box .section__list .section__item .section__info .title h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .wrapper-news .section-list-box .section__list .section__item .section__info .content {
+    font-size: 15px;
+    line-height: 18px;
+    padding-right: 120px;
+  }
+  .wrapper-news .section-list-box .section__list .section__item .section__info .content .full-time {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .wrapper-news .section-list-box .section__list .section__item:not(:last-child) {
+    margin-bottom: 35px;
   }
   .wrapper-news .section-list-box .title {
     font-size: 25px;
