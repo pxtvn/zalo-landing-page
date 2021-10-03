@@ -1526,6 +1526,12 @@ nav {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
+  .container nav ul li:first-child {
+    padding-top: 0;
+  }
+  .container nav ul li:last-child {
+    padding-bottom: 0;
+  }
   .container nav ul li.active {
     font-weight: bold;
     position: relative;
@@ -1824,7 +1830,7 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    top: 45%;
+    top: 50%;
   }
   .wrapper-home .section-main .section-main__menu .button-menu {
     max-width: 260px;
@@ -1850,8 +1856,11 @@ nav {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
+  .wrapper-home .section-main {
+    position: relative;
+  }
   .wrapper-home .section-main .section__title {
-    padding-top: 0;
+    padding-top: 10px;
   }
   .wrapper-home .section-main .section__title .highlights {
     display: block;
@@ -2864,9 +2873,11 @@ nav {
   display: none;
 }
 
-.overlay.show {
-  display: block;
-  z-index: 1005;
+@media screen and (min-width: 1024px) {
+  .overlay.show {
+    display: block;
+    z-index: 1005;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -2882,10 +2893,59 @@ nav {
   --animation-curve: cubic-bezier(0.12, 0.7, 0.74, 0.71);
 }
 
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+    background-color: var(--darkBlue);
+  }
+  100% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    background-color: rgba(245, 0, 182, 0);
+  }
+}
+
+@keyframes scaling {
+  0% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+    background-color: var(--darkBlue);
+  }
+  100% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    background-color: rgba(245, 0, 182, 0);
+  }
+}
+
+@-webkit-keyframes phone {
+  0% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  100% {
+    -webkit-transform: scale(4.5);
+            transform: scale(4.5);
+  }
+}
+
+@keyframes phone {
+  0% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  100% {
+    -webkit-transform: scale(4.5);
+            transform: scale(4.5);
+  }
+}
+
 .floating-btn {
   position: fixed;
   right: 85px;
   top: 85%;
+  display: none;
 }
 
 .floating-btn .text {
@@ -2957,51 +3017,9 @@ nav {
           animation-delay: 1s;
 }
 
-@-webkit-keyframes scaling {
-  0% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-    background-color: var(--darkBlue);
-  }
-  100% {
-    -webkit-transform: scale(10);
-            transform: scale(10);
-    background-color: rgba(245, 0, 182, 0);
-  }
-}
-
-@keyframes scaling {
-  0% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-    background-color: var(--darkBlue);
-  }
-  100% {
-    -webkit-transform: scale(10);
-            transform: scale(10);
-    background-color: rgba(245, 0, 182, 0);
-  }
-}
-
-@-webkit-keyframes phone {
-  0% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-  }
-  100% {
-    -webkit-transform: scale(4.5);
-            transform: scale(4.5);
-  }
-}
-
-@keyframes phone {
-  0% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-  }
-  100% {
-    -webkit-transform: scale(4.5);
-            transform: scale(4.5);
+@media screen and (min-width: 1024px) {
+  .floating-btn {
+    display: block;
   }
 }
 

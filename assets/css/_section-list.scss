@@ -412,6 +412,12 @@ nav {
           font-size: 12px;
           line-height: 14px;
           transition: all 0.4s ease;
+          &:first-child {
+            padding-top: 0;
+          }
+          &:last-child {
+            padding-bottom: 0;
+          }
           &.active {
             font-weight: bold;
             position: relative;

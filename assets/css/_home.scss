@@ -266,7 +266,7 @@
       }
       .section-main__menu {
         justify-content: center;
-        top: 45%;
+        top: 50%;
         .button-menu {
           max-width: 260px;
           min-width: 180px;
@@ -312,8 +312,9 @@
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .wrapper-home {
     .section-main {
+      position: relative;
       .section__title {
-        padding-top: 0;
+        padding-top: 10px;
         .highlights {
           display: block;
         }

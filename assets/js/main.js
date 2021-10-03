@@ -163,7 +163,7 @@ if (window.innerWidth > 601) {
     let current = "";
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
-      if (pageYOffset >= sectionTop - 140) {
+      if (pageYOffset >= sectionTop - 100) {
         current = section.getAttribute("id");
       }
     });
