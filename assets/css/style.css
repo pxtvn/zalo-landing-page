@@ -2696,7 +2696,8 @@ nav {
     color: #ffffff;
   }
   .form .section-main__menu {
-    padding: unset;
+    padding-left: 0;
+    padding-right: 0;
   }
   .form .button {
     max-width: 100%;
