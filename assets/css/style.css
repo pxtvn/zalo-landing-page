@@ -2873,8 +2873,13 @@ nav {
   display: none;
 }
 
+.overlay.show:not(.notify) {
+  display: block;
+  z-index: 1005;
+}
+
 @media screen and (min-width: 1024px) {
-  .overlay.show {
+  .overlay.notify.show {
     display: block;
     z-index: 1005;
   }
