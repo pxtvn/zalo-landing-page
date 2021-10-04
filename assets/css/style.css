@@ -2695,6 +2695,9 @@ nav {
   .form .title {
     color: #ffffff;
   }
+  .form .section-main__menu {
+    padding: unset;
+  }
   .form .button {
     max-width: 100%;
     padding-top: 6px;
